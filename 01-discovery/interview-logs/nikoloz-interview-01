@@ -1,0 +1,102 @@
+# Interview Log 01
+
+## Participant Profile
+
+| Field | Value |
+|------|------|
+| Pseudonym or initials | DK |
+| Role or occupation | Computer Science student |
+| Relevant context (why do they match your ICP?) | Uses both laptop and phone for assignments |
+| How recruited | Classmate |
+| Interview date | 2026-03-25 |
+| Interview duration (minutes) | 20 |
+| Interview format | In-person |
+| Interviewer(s) | Nikoloz Jvebenava |
+
+---
+
+## Interview Setting
+Conducted in a university study room. Participant was working on an assignment during the interview.
+
+---
+
+## Verbatim Quotes
+
+### Quote 1  
+**Context (what question prompted this):** Asked about switching devices  
+
+> "I usually send files to myself on Telegram, but then I forget which one is the latest."
+
+**What this tells us:**  
+Users rely on informal tools → leads to version confusion.
+
+---
+
+### Quote 2  
+**Context:** Asked about submission mistakes  
+
+> "I once submitted the wrong version and lost points because of it."
+
+**What this tells us:**  
+The problem has real academic consequences.
+
+---
+
+### Quote 3  
+**Context:** Asked about time spent searching  
+
+> "Sometimes I spend like 10 minutes just opening files to check which one is correct."
+
+**What this tells us:**  
+Significant time is wasted repeatedly.
+
+---
+
+## Key Observations
+
+- Participant showed Telegram chat with multiple file versions  
+- Visible frustration when describing mistake  
+- No consistent file naming system  
+
+---
+
+## Preliminary Insights
+
+- Students use messaging apps as file-sharing tools  
+- No clear version control system  
+- The issue is recurring and impactful  
+
+---
+
+## JTBD Frame
+
+"The participant is hiring Telegram file sharing to do the job of accessing files across devices when switching between phone and laptop. The emotional job is avoiding mistakes. The social job is appearing responsible and competent."
+
+---
+
+## Open Questions
+
+- Why don’t users consistently use cloud storage?  
+- What causes version confusion most often?  
+- Would automatic version tracking solve this?  
+
+---
+
+## ICP Fit Assessment
+
+**Strong fit** — matches target user exactly.
+
+---
+
+## Interviewer Reflection
+
+**Most important thing learned:**  
+Real consequences (grades) make this a serious problem.
+
+**What to do differently next time:**  
+Ask more about file naming and organization habits.
+
+---
+
+**Committed by:** Nikoloz Jvebenava  
+**Date:** 2026-03-25
