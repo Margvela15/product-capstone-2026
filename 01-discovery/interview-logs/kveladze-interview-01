@@ -1,0 +1,108 @@
+# Interview Log — Kveladze 01
+
+## Participant Profile
+
+| Field | Value |
+|------|------|
+| Pseudonym or initials | VG |
+| Role or occupation | Third-year CS student at KIU |
+| Relevant context (why do they match your ICP?) | Five courses this semester, three project-based. Self-described "tool tinkerer" — has tried multiple automation tools to solve the platform problem. |
+| How recruited | Approached after Databases lab; chosen specifically because I had heard he tinkers with Telegram bots. |
+| Interview date | 2026-04-03 |
+| Interview duration (minutes) | 26 |
+| Interview format | In-person, KIU corridor bench |
+| Interviewer(s) | Giorgi Kveladze |
+
+---
+
+## Interview Setting
+Hallway bench between classes. Short window (he had 30 min before his next lab) but he was animated and gave me a lot of material in that time.
+
+---
+
+## Verbatim Quotes
+
+### Quote 1
+**Context:** Asked what tools he has tried to manage his coursework.
+
+> "I tried a Telegram bot that scraped Moodle. I tried IFTTT. I tried a Notion template. I tried a calendar with reminders. I tried writing my own Python script. None of them lasted more than three weeks."
+
+**What this tells us:** This is not someone who lacks technical skill or motivation. He has tried *more* solutions than the average student and they have *all* failed. The failure is not about the user — it is about the durability of any aggregation that requires maintenance.
+
+---
+
+### Quote 2
+**Context:** Asked which one came closest to working.
+
+> "The Python script. It actually scraped Moodle and sent me Telegram messages. But Moodle changed something in the login flow and it broke and I never fixed it. That was in October."
+
+**What this tells us:** Even a self-built solution by a CS student fails because the upstream platform is unstable. Any third-party solution faces the same risk and will hit the same fate.
+
+---
+
+### Quote 3
+**Context:** Asked what he does now.
+
+> "Now I do nothing. I check Moodle when I remember. I miss things. It is what it is."
+
+**What this tells us:** The trajectory is *learned helplessness*. He has gone from active builder to passive sufferer over the course of two semesters. This is the same endpoint as students who never tried anything — the system grinds everyone down to the same state.
+
+---
+
+### Quote 4
+**Context:** Asked whether he would try again if someone built a better version.
+
+> "I would install it. I would also expect it to break in three weeks. That is just what happens."
+
+**What this tells us:** The trust deficit is real and earned. Any new solution starts in a hole. We have to budget for *proving* reliability, not just delivering features.
+
+---
+
+## Key Observations
+
+- He listed five tools without hesitation. He had clearly thought about this before.
+- Used the phrase "it is what it is" twice. That is the linguistic marker of a normalized chronic problem.
+- Showed me the Telegram bot's last message — from October 2025. He had not deleted the chat. He just stopped expecting it to send anything.
+
+---
+
+## Preliminary Insights
+
+- Even motivated, technical students cannot sustain their own solutions because Moodle's instability breaks scrapers.
+- Tool fatigue is real: students who have tried and failed repeatedly are *less* likely to engage with new solutions, not more.
+- The trust hole for any new solution in this space is deep. Reliability must be proven, not promised.
+
+---
+
+## JTBD Frame
+
+"VG used to hire automation tools to do the job of staying on top of his courses. He has now hired *resignation* to do the same job. The functional job changed: he no longer expects to be on top of his courses, he expects to recover from missing things."
+
+---
+
+## Open Questions
+
+- How many third-year CS students have tried and abandoned at least one tool? My guess after this interview is most of them.
+- Is there a way to make a solution that survives Moodle changes without active maintenance?
+- Does learned helplessness reverse if a tool actually works for a full semester, or is the trust permanently damaged?
+
+---
+
+## ICP Fit Assessment
+
+**Very strong fit.** Third-year CS, multiple project courses, has personally experienced the full failure cycle of trying to fix this himself.
+
+---
+
+## Interviewer Reflection
+
+**Most important thing learned:**
+The most technical student I have spoken to has the *least* hope. That is counterintuitive and important. We cannot assume technical users will be early adopters — they have been burned the most.
+
+**What to do differently next time:**
+Ask earlier about the *order* of tools tried. The chronology — from active builder to passive sufferer — was the most diagnostic part of the interview, and I almost missed it because I was asking about each tool separately.
+
+---
+
+**Committed by:** Giorgi Kveladze
+**Date:** 2026-04-03

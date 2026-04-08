@@ -1,0 +1,108 @@
+# Interview Log 04 — Nikoloz
+
+## Participant Profile
+
+| Field | Value |
+|------|------|
+| Pseudonym or initials | EM |
+| Role or occupation | Third-year CS student at KIU |
+| Relevant context (why do they match your ICP?) | Five courses, three project-based. Returning intentionally to the team's committed problem (course platform fragmentation) after my earlier interviews 02 and 03 drifted into an adjacent problem space (dorm coordination). |
+| How recruited | Classmate from my Software Engineering lab. |
+| Interview date | 2026-04-06 |
+| Interview duration (minutes) | 30 |
+| Interview format | In-person, KIU library |
+| Interviewer(s) | Nikoloz Jvebenava |
+
+---
+
+## Interview Setting
+Library group room. After my first three interviews I realized I had drifted away from our committed ICP — interviews 02 and 03 had explored dorm-coordination problems, which is interesting but is not what we committed to investigate in Lab 2. This interview was a deliberate return to the original problem.
+
+---
+
+## Verbatim Quotes
+
+### Quote 1
+**Context:** Asked her to describe a recent situation where she was caught off-guard by something academic.
+
+> "Yesterday. Yesterday I found out at 9pm that there was a quiz at 9am the next morning. The professor posted it in Moodle three days ago. I had not opened that course on Moodle in those three days because the professor usually announces things in Teams."
+
+**What this tells us:** Even within a single course, professors are inconsistent about which platform they use for what. Students adapt by checking the platform a professor *usually* uses, which fails when the professor breaks pattern. Pattern-breaking is the failure mode.
+
+---
+
+### Quote 2
+**Context:** Asked what she did with that 12 hours.
+
+> "I cried for 20 minutes and then I studied. I called my mom. She told me to go to sleep. I did not."
+
+**What this tells us:** The emotional weight is real and immediate. The pain is not abstract anxiety — it produces tears and family phone calls. This is high intensity, even if low duration.
+
+---
+
+### Quote 3
+**Context:** Asked whether she has any system for catching things like this.
+
+> "I have nothing. I gave up trying to have a system. Every system I tried needed me to update it. I am the system now and the system is bad."
+
+**What this tells us:** She has independently arrived at the same insight as VG (kveladze-01) — every system that requires student maintenance fails. She also names herself as the failed system. This is the language of internalized blame for a structural problem.
+
+---
+
+### Quote 4
+**Context:** Asked whether her professors know.
+
+> "I think they think Moodle is enough. They post in Moodle and they think they did their job. Maybe technically they did. But nobody only checks Moodle anymore."
+
+**What this tells us:** There is a perception gap between professor mental models (post-and-done) and student reality (multi-platform sweeps). The professor side of this problem is invisible to the professor.
+
+---
+
+## Key Observations
+
+- The "I am the system now and the system is bad" quote is, I think, the single most precise summary of this problem any interviewee has given us.
+- She started crying briefly during the quiz story. I paused and asked if she wanted to stop. She said no, that talking about it was actually helping.
+- She thanked me at the end of the interview, which has not happened in any of my earlier interviews.
+
+---
+
+## Preliminary Insights
+
+- Intra-course inconsistency (one professor using different platforms for different things) is just as damaging as inter-course inconsistency.
+- The emotional cost is acute and immediate — tears, family calls, lost sleep — not just background anxiety.
+- Students blame themselves ("I am the system and the system is bad") for what is structurally a platform-fragmentation problem.
+
+---
+
+## JTBD Frame
+
+"EM has fired every tool she has tried and rehired *herself* to do the job of tracking coursework. She knows she is bad at it. She does it anyway because there is no alternative she trusts."
+
+---
+
+## Open Questions
+
+- How many of the third-year CS students would describe themselves with the language of self-blame for what is actually a structural problem?
+- Does the emotional intensity correlate with course load, or is it a personality variable?
+- What would it take for a student to *trust* a tool enough to fire themselves from the role?
+
+---
+
+## ICP Fit Assessment
+
+**Very strong fit.** Third-year CS, three project-based courses, currently inside the failure mode our committed problem statement describes. This interview is the cleanest validation of the original problem so far.
+
+---
+
+## Interviewer Reflection
+
+**Most important thing learned:**
+My earlier two interviews (02 and 03) drifted into a different problem (dorm coordination) and I should not have let them. The team had committed to a specific ICP and a specific problem in Lab 2, and my job in Lab 3-4 was to test that, not to explore adjacent problems. This interview brought me back. I am noting it here so the team can see the course-correction.
+
+**What to do differently next time:**
+Read the team's committed problem statement out loud before each interview. It sounds excessive but it would have prevented me from drifting in interviews 02 and 03.
+
+---
+
+**Committed by:** Nikoloz Jvebenava
+**Date:** 2026-04-06

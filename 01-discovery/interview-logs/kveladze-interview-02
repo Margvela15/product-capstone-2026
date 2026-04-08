@@ -1,0 +1,117 @@
+# Interview Log — Kveladze 02
+
+## Participant Profile
+
+| Field | Value |
+|------|------|
+| Pseudonym or initials | BN |
+| Role or occupation | Third-year CS student at KIU |
+| Relevant context (why do they match your ICP?) | Four courses, two project-based. Self-identifies as "the one who always asks in the group chat." |
+| How recruited | Recruited through a mutual friend who described her as someone who "always wants to know what is happening." |
+| Interview date | 2026-04-04 |
+| Interview duration (minutes) | 22 |
+| Interview format | In-person, KIU library |
+| Interviewer(s) | Giorgi Kveladze |
+
+---
+
+## Interview Setting
+Quiet study room. She had brought her laptop but did not open it during the interview, which I took as a sign she was actually present.
+
+---
+
+## Verbatim Quotes
+
+### Quote 1
+**Context:** Asked how she keeps up with her courses.
+
+> "I ask in the group chat. A lot. Probably too much. People joke about it now."
+
+**What this tells us:** She is the team's compensating mechanism — the person whose constant asking benefits everyone else. Her social cost is everyone else's free service.
+
+---
+
+### Quote 2
+**Context:** Asked what kind of jokes.
+
+> "Someone made a meme of me with the text 'BN asks again.' It is not mean but it is also not nothing. I laughed. Then I asked again the next day because I had to."
+
+**What this tells us:** The social cost of asking is real but the necessity overrides it. The meme is a small humiliation she absorbs because the alternative — not knowing — is worse. This is a *measurable* social pain, not just a logistical one.
+
+---
+
+### Quote 3
+**Context:** Asked whether she has tried to stop asking and just check the platforms herself.
+
+> "I tried for a week. I missed two things. I went back to asking. I would rather be the annoying one than the one who fails."
+
+**What this tells us:** She has performed her own controlled experiment between two coping strategies, and she chose social cost over academic cost. That is a quantified preference. It also tells us she has *agency* — she is not failing because she gave up, she is failing because the alternatives are worse.
+
+---
+
+### Quote 4
+**Context:** Asked who in her group is the *opposite* of her — the one who never asks.
+
+> "There is one guy. He never asks. He also never knows what is going on. He just shows up to whatever we tell him. He is failing two courses I think."
+
+**What this tells us:** The group has stratified into roles — askers and non-askers — and the non-askers are paying a higher academic price. The "asker" role is functional even if socially costly. We may be designing for both segments simultaneously.
+
+---
+
+### Quote 5
+**Context:** Asked what would have to be true for her to stop asking.
+
+> "Something would have to know before me. Right now I am the first one to know because I check. If something else checked first I would not have to."
+
+**What this tells us:** She has implicitly described a replacement function: she is currently functioning as the group's polling agent. A tool that polled for her would let her stop. This is one of the cleanest articulations of value we have heard.
+
+---
+
+## Key Observations
+
+- Self-aware about being "the asker" — she has thought about her role before this conversation.
+- Used the phrase "I would rather be the annoying one than the one who fails" almost defiantly.
+- Pointed at her phone when she said "ask in the group chat" — physical association of phone with social cost.
+
+---
+
+## Preliminary Insights
+
+- The "asker" role is real and structural — most groups have one. They are absorbing social cost on behalf of the group.
+- Askers are an excellent first user segment because they have already chosen to pay a cost to solve this problem; a tool that lowers that cost has direct, felt value.
+- The non-asker segment is the harder one — they are failing silently and would need to be reached differently.
+
+---
+
+## JTBD Frame
+
+"BN is hiring herself, and the social capital she spends asking, to do the job of being the group's coursework polling agent. The functional job is reducing uncertainty for the group. The emotional job is not being the one who fails. The social job is being known as helpful, even if also annoying."
+
+---
+
+## Open Questions
+
+- What fraction of CS project groups have a designated asker?
+- Would askers feel relieved if they could stop, or would they miss the social role?
+- Are there any groups with no asker that still function?
+
+---
+
+## ICP Fit Assessment
+
+**Strong fit.** Third-year CS, project-heavy courseload, deeply embedded in the daily experience of the problem.
+
+---
+
+## Interviewer Reflection
+
+**Most important thing learned:**
+There is a *role* in every group — the asker — that is doing the work of compensating for platform fragmentation. We had been thinking of the problem as individual. It is actually distributed across groups, with one person typically absorbing the cost.
+
+**What to do differently next time:**
+Ask whether the interviewee is the asker or the non-asker in their group early. It would have given me the framing for the entire conversation up front instead of at the end.
+
+---
+
+**Committed by:** Giorgi Kveladze
+**Date:** 2026-04-04

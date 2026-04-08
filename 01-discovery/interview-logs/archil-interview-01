@@ -1,0 +1,108 @@
+# Interview Log — Archil 01
+
+## Participant Profile
+
+| Field | Value |
+|------|------|
+| Pseudonym or initials | AK |
+| Role or occupation | Third-year Computer Science student at KIU |
+| Relevant context (why do they match your ICP?) | Currently enrolled in 4 project-based courses (Software Engineering, OOP, Databases, Web Dev). Professors split announcements across Moodle, Teams, and Messenger. |
+| How recruited | Approached after a shared lecture; explained I was researching how students manage coursework, did not describe any product idea. |
+| Interview date | 2026-03-30 |
+| Interview duration (minutes) | 28 |
+| Interview format | In-person, KIU library |
+| Interviewer(s) | Archil Margvelashvili |
+
+---
+
+## Interview Setting
+Quiet corner of the library between her morning and afternoon classes. She had her laptop open with Moodle and Teams already running in two browser windows when I arrived — that was the first signal I was talking to the right person.
+
+---
+
+## Verbatim Quotes
+
+### Quote 1
+**Context (what question prompted this):** Asked her to walk me through her last assignment from the moment she heard about it.
+
+> "I heard about it from my friend in Messenger. Then I went to Moodle to find the file. Then I went to Teams because the professor said in Teams there were extra requirements. Three places for one homework."
+
+**What this tells us:** The same single assignment lives across three platforms by default, and discovery starts from a peer mention rather than a professor announcement.
+
+---
+
+### Quote 2
+**Context:** Asked about the worst recent incident.
+
+> "I lost five points on the Software Engineering project because the professor wrote in the Teams project channel that we needed a UML diagram. I never opened that subchannel that week. Five points."
+
+**What this tells us:** Concrete, recent, quantified penalty. The information existed in a channel she had access to — the failure was attention bandwidth across nested subchannels, not access.
+
+---
+
+### Quote 3
+**Context:** Asked what she does to make sure it does not happen again.
+
+> "I have a notebook now. A real paper notebook. I write down everything I see. It is stupid but it works better than my phone."
+
+**What this tells us:** Her chosen workaround is analog because every digital tool she has tried is itself a platform she has to remember to check. The paper notebook wins because it has zero notification overhead.
+
+---
+
+### Quote 4
+**Context:** Asked whether her professors know that students struggle with this.
+
+> "I think they think we are lazy. They post one thing and assume we saw it. They post on the platform that is convenient for them, not for us."
+
+**What this tells us:** There is a perceived adversarial framing between professors and students about platform usage. Students do not feel they can ask the professor to consolidate.
+
+---
+
+## Key Observations
+
+- Browser had Moodle and Teams open in parallel before the interview even started — this is her steady state, not a special setup.
+- She physically pulled out a small Moleskine-style notebook to show me her assignment list. It was full.
+- She described the platform fragmentation calmly, but her voice changed when she got to the "five points" story.
+
+---
+
+## Preliminary Insights
+
+- Peer-mediated discovery: students learn what is due from each other, not from the platforms themselves.
+- Analog workarounds beat digital ones because they have no notification cost.
+- Nested Teams subchannels are a hidden failure mode — students join them but stop checking them.
+
+---
+
+## JTBD Frame
+
+"AK is hiring a paper notebook to do the job of consolidating coursework requirements when professors distribute them across three platforms. The functional job is knowing what is due. The emotional job is feeling in control. The social job is not being the student who has to ask the group chat what is happening."
+
+---
+
+## Open Questions
+
+- How many KIU professors use nested Teams subchannels per project group?
+- Does the notebook workaround actually prevent the failure mode or just make her feel better?
+- Would consolidation work if the consolidator was another student rather than software?
+
+---
+
+## ICP Fit Assessment
+
+**Strong fit.** Third-year CS student, four project-based courses simultaneously, professors split information across the exact three platforms our problem statement names.
+
+---
+
+## Interviewer Reflection
+
+**Most important thing learned:**
+The workaround winning the competition is not a digital tool — it is paper. That is a strong signal that any future tool we build has to compete with the *zero notification overhead* of a notebook, not with other apps.
+
+**What to do differently next time:**
+Ask for specific point losses earlier in the conversation. The "five points" story was the most concrete data of the whole interview and I almost did not hear it because I was asking abstract questions.
+
+---
+
+**Committed by:** Archil Margvelashvili
+**Date:** 2026-03-30

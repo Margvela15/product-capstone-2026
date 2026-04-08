@@ -1,0 +1,117 @@
+# Interview Log — Archil 02
+
+## Participant Profile
+
+| Field | Value |
+|------|------|
+| Pseudonym or initials | RM |
+| Role or occupation | Third-year CS student at KIU |
+| Relevant context (why do they match your ICP?) | On a 4-person team for the Web Development course. Professor uses Teams; team uses Discord. Constant coordination cost between the two. |
+| How recruited | Friend of a friend; recruited through a classmate, no prior relationship. |
+| Interview date | 2026-04-01 |
+| Interview duration (minutes) | 35 |
+| Interview format | In-person, KIU cafeteria |
+| Interviewer(s) | Archil Margvelashvili |
+
+---
+
+## Interview Setting
+Cafeteria during lunch. He had just come from a group project meeting and was visibly tired. I almost rescheduled, but he said he wanted to talk about it because it was "fresh."
+
+---
+
+## Verbatim Quotes
+
+### Quote 1
+**Context:** Asked how his team coordinates work for the Web Development project.
+
+> "We use Discord for everything between us. The professor uses Teams. So somebody has to be the bridge. Right now it is me, and I hate it."
+
+**What this tells us:** The cross-platform tax is not abstract — it falls on a specific person in the group, and that person resents it. There is a hidden labor cost we had not surfaced before.
+
+---
+
+### Quote 2
+**Context:** Asked what happens when the bridge fails.
+
+> "Last sprint I forgot to repost something from Teams to Discord, and we delivered the wrong thing. The professor said it was on us because he posted it. Technically he was right."
+
+**What this tells us:** The cost of bridging falls on the student, but the consequence falls on the whole team. Failure produces guilt and intra-team blame on top of the grade hit.
+
+---
+
+### Quote 3
+**Context:** Asked whether the team has tried to fix this.
+
+> "We talked about all using Teams. Nobody wants to. Discord is where we joke and complain. Teams is where the professor lives. We do not want them to be the same place."
+
+**What this tells us:** This is critical. Students *deliberately* keep their informal channel (Discord) separate from the professor's channel (Teams) for social and emotional reasons. They are not just lazy — they are protecting a private space. Any solution that requires unifying these channels will be rejected.
+
+---
+
+### Quote 4
+**Context:** Asked what would actually help him personally.
+
+> "Honestly? If I could just know that nothing important got posted while I was sleeping. Just that. Not even what was posted. Just yes or no."
+
+**What this tells us:** The minimum viable signal is binary — "is there something I need to look at." The full content is secondary. This is a much smaller product than I had been imagining.
+
+---
+
+### Quote 5
+**Context:** Asked, near the end, whether he has talked to anyone else about this.
+
+> "Everyone in my year complains about it. Nobody does anything. We just complain and then go back to it."
+
+**What this tells us:** The problem is widely recognized, widely complained about, and nobody has built a workaround that survives. That is the profile of a problem worth solving — high awareness, no winning solution.
+
+---
+
+## Key Observations
+
+- He used the word "bridge" twice unprompted to describe his role in the team. That is his own framing, not mine.
+- Visible relief when describing the "yes or no" minimum signal — like he had not let himself want something so small before.
+- Did not blame the professor at any point. Blamed the *structure*.
+
+---
+
+## Preliminary Insights
+
+- Students protect informal channels (Discord, Messenger) as private space — solutions cannot ask them to merge with professor channels.
+- Group projects create a "bridge person" role that is invisible labor. This person is the right initial user.
+- The minimum viable product may be much smaller than feature-rich aggregation: a binary "something matters" signal.
+
+---
+
+## JTBD Frame
+
+"RM is hiring himself to do the job of bridging Teams and Discord for his project team because no tool does it. The functional job is keeping the team in sync. The emotional job is not being the reason the team fails. The social job is being a reliable teammate."
+
+---
+
+## Open Questions
+
+- How many group projects have a designated "bridge person"? Is this role formal or informal?
+- Would the "yes/no signal" still be valuable even if it was occasionally wrong?
+- Is the Discord/Teams separation universal, or specific to the Web Dev course culture?
+
+---
+
+## ICP Fit Assessment
+
+**Strong fit.** Third-year CS, project team in a project-heavy course, exact platform fragmentation pattern.
+
+---
+
+## Interviewer Reflection
+
+**Most important thing learned:**
+Students *want* their informal channel separate from their professor's channel. I had been assuming the opposite — that consolidation was the goal. That assumption is wrong.
+
+**What to do differently next time:**
+When someone uses a vivid word like "bridge" to describe their role, stop and ask them to define it. I almost moved past it and only realized later how loaded it was.
+
+---
+
+**Committed by:** Archil Margvelashvili
+**Date:** 2026-04-01
