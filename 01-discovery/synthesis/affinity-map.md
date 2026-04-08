@@ -2,7 +2,7 @@
 
 **Team:** KIU Capstone Team
 **Date compiled:** 2026-04-08
-**Source data:** 10 interview logs in `01-discovery/interview-logs/`
+**Source data:** 12 interview logs in `01-discovery/interview-logs/` (10 on-topic, 2 off-topic adjacent-space exploration)
 **Method:** Each verbatim quote and observation from every interview was extracted onto a virtual sticky note, then grouped by emerging theme. Themes were named after the conversation, not before. Quotes were not forced into themes — two interviews (nikoloz-02, nikoloz-03) explored an adjacent problem space (dorm/roommate coordination) and are clustered separately.
 
 ---
@@ -22,6 +22,7 @@ In Lab 3, two early interviews (`nikoloz-interview-02`, `nikoloz-interview-03`) 
 | hw1-wazowski37-01 (LB-3CS) | "I open Moodle first to find the file, then I go to Teams to check if the professor said anything about it, and then I scroll up in the group chat to see if anyone is confused, because usually they are." |
 | archil-01 (AK) | "Three places for one homework." (Messenger → Moodle → Teams) |
 | archil-01 (observation) | Browser had Moodle and Teams open in parallel before the interview started — steady state. |
+| archil-03 (DT) | "I check Moodle every day because of him, even on weekends." (One professor's Moodle-only choice forces daily polling for an entire course.) |
 | hw1-wazowski37-02 (TS-3CS) | Sunday-ritual "list-making" that takes ~1 hour and is wrong by Tuesday. |
 | nikoloz-04 (EM) | "I had not opened that course on Moodle in those three days because the professor usually announces things in Teams." |
 
@@ -40,6 +41,8 @@ In Lab 3, two early interviews (`nikoloz-interview-02`, `nikoloz-interview-03`) 
 | nikoloz-01 (DK) | "I once submitted the wrong version and lost points because of it." |
 | hw1-wazowski37-02 (TS-3CS) | Deadline moved two days earlier in a muted Teams subchannel; missed entirely; recovered only by lying to the professor about a family emergency. |
 | nikoloz-04 (EM) | Found out at 9pm about a 9am quiz posted three days earlier in Moodle. |
+| archil-03 (DT) | Lost three points last month: OS professor changed submission format to a single zip file in a Moodle update; she had not opened that course's Moodle for two days because she was working on Web Dev. |
+| kveladze-03 (SH) | Failed an entire course last semester. "I think two of those points were from missed assignments. I am not sure exactly. I do not keep track of why I lose points." Most extreme cost outcome in the dataset. |
 
 **What this cluster tells us:** The pain is not hypothetical. Every interviewee on the committed problem could name a recent, dated, point-quantified loss. The problem produces measurable academic damage.
 
@@ -57,6 +60,8 @@ In Lab 3, two early interviews (`nikoloz-interview-02`, `nikoloz-interview-03`) 
 | kveladze-01 (VG) | Tried Telegram bot, IFTTT, Notion template, calendar reminders, custom Python script. All failed. |
 | kveladze-01 (VG) | Self-built Python scraper broke when Moodle changed its login flow; never fixed. |
 | archil-01 (AK) | Has switched to a *paper* notebook because every digital tool has notification overhead. |
+| archil-03 (DT) | Prints assignment pages on first sight. "It is wasteful and I know it is wasteful. I do it anyway." Same analog-distrust pattern as AK, independently arrived at. |
+| kveladze-03 (SH) | The *absence* of workarounds. Tried a calendar once in first year, prompted by his mother, abandoned within a week, never tried again. Currently does nothing — the most extreme version of learned helplessness in the dataset. |
 | nikoloz-04 (EM) | "I gave up trying to have a system. Every system I tried needed me to update it." |
 | nikoloz-03 (TM) | "We tried making a list, but we stopped checking it after a week." (originally about chores; pattern still relevant) |
 
@@ -90,6 +95,7 @@ In Lab 3, two early interviews (`nikoloz-interview-02`, `nikoloz-interview-03`) 
 | kveladze-02 (BN) | Group meme about her constant asking; absorbs the social cost because the alternative is failing. |
 | nikoloz-04 (EM) | Cried for 20 minutes; called her mother; lost a night of sleep. |
 | nikoloz-04 (EM) | "I am the system now and the system is bad." (Internalized self-blame for a structural problem.) |
+| kveladze-03 (SH) | "Yes. I mean, the information is there if I look. I just do not look. So it is on me. I am bad at this. Some people are good at it and I am bad at it." (Total internalization of structural failure as personal inadequacy — even more flat than EM.) |
 
 **What this cluster tells us:** The cost has at least three axes: time, grades, and *integrity/identity*. Students lie, cry, accept being the "annoying one," and internalize structural failure as personal failure. This dimension was not in the original Lab 2 problem statement and emerged only from the interviews.
 
@@ -102,8 +108,10 @@ In Lab 3, two early interviews (`nikoloz-interview-02`, `nikoloz-interview-03`) 
 | Source | Quote / Observation |
 |---|---|
 | archil-02 (RM) | "Somebody has to be the bridge. Right now it is me, and I hate it." |
+| archil-03 (DT) | "Screenshot relay" — one teammate sees a Teams post, screenshots it, pastes into Discord; the rest of the team learns from the screenshot. The bridge function performed by *image artifact* rather than verbal updates. |
 | kveladze-02 (BN) | The "asker" — pays social cost so the group does not miss things. |
 | kveladze-02 (BN) | "There is one guy. He never asks. He also never knows what is going on. He is failing two courses I think." (Non-asker counter-segment.) |
+| kveladze-03 (SH) | The non-asker himself, in his own words. "My friends. Or nobody. Sometimes I find out the day of." Confirms BN's counter-segment exists and what it looks like from inside. |
 | hw1-wazowski37-01 (LB-3CS) | "Honestly nothing. I just hope someone in the group chat will say something." (The asker as safety net for non-askers.) |
 
 **What this cluster tells us:** The problem is not strictly individual. It is distributed across groups, with one or two people absorbing the bridging/asking work for everyone else. These compensating individuals (bridges, askers) are the cleanest first-user segment because they have *already* chosen to pay a cost to solve this — a tool that lowers their cost has direct, felt value.
@@ -129,18 +137,18 @@ In Lab 3, two early interviews (`nikoloz-interview-02`, `nikoloz-interview-03`) 
 
 | Cluster | # of supporting quotes | # of distinct interviewees |
 |---|---|---|
-| A — Sweep Ritual | 5 | 5 |
-| B — Quantified Penalties | 5 | 5 |
-| C — Failed Workarounds | 8 | 7 |
+| A — Sweep Ritual | 6 | 6 |
+| B — Quantified Penalties | 7 | 7 |
+| C — Failed Workarounds | 10 | 9 |
 | D — Notification Triage | 4 | 3 |
-| E — Social/Emotional Cost | 5 | 4 |
-| F — Group Roles | 4 | 3 |
+| E — Social/Emotional Cost | 6 | 5 |
+| F — Group Roles | 6 | 5 |
 | G — Adjacent Space (excluded) | 4 | 2 |
 
-**On-topic interviews (used as evidence):** 8 of 10
+**On-topic interviews (used as evidence):** 10 of 12
 - nikoloz-01, nikoloz-04
-- archil-01, archil-02
-- kveladze-01, kveladze-02
+- archil-01, archil-02, archil-03
+- kveladze-01, kveladze-02, kveladze-03
 - hw1-wazowski37-01, hw1-wazowski37-02
 
 **Off-topic interviews (excluded from evidence base):** nikoloz-02, nikoloz-03

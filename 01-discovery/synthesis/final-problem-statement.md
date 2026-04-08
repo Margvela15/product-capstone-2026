@@ -4,7 +4,7 @@
 **Members:** Archil Margvelashvili, Nikoloz Jvebenava, Giorgi Papidze, Giorgi Kveladze
 **Date committed:** 2026-04-08
 **Supersedes:** `00-foundation/team-problem-statement.md` (Lab 2 hypothesis)
-**Evidence base:** 8 on-topic interviews in `01-discovery/interview-logs/`, synthesized in `affinity-map.md` and `patterns-analysis.md`
+**Evidence base:** 10 on-topic interviews in `01-discovery/interview-logs/`, synthesized in `affinity-map.md` and `patterns-analysis.md`
 
 ---
 
@@ -51,12 +51,16 @@
 
 > "I lost five points on the Software Engineering project because the professor wrote in the Teams project channel that we needed a UML diagram. I never opened that subchannel that week. Five points." — AK
 
+> "Last month. The OS professor changed the submission format to a single zip file in a Moodle update. I had not opened that course on Moodle for two days because I was working on Web Dev. He took three points and the comment was 'see Moodle announcement.' I saw it three days later." — DT (archil-03)
+
 **Integrity / identity:**
 > "I emailed the professor and I lied. I said I had a family thing. He gave me twelve hours. I worked the whole night. I got the points but I felt like a loser." — TS-3CS
 
 > "I am the system now and the system is bad." — EM
 
 > "I would rather be the annoying one than the one who fails." — BN (kveladze-02)
+
+> "Yes. I mean, the information is there if I look. I just do not look. So it is on me. I am bad at this. Some people are good at it and I am bad at it." — SH (kveladze-03), the most extreme version of structural failure internalized as personal inadequacy. SH failed an entire course last semester and could not tell us how many of those lost points came from missed platform announcements.
 
 The integrity/identity axis was not in our Lab 2 hypothesis. It surfaced from the interviews and is now treated as **the most weighty cost dimension** because it is the one students remember longest and feel most ashamed of.
 
@@ -78,10 +82,10 @@ The full list of failed workarounds named by interviewees: Google Calendar, Noti
 
 | Dimension | Assessment | Source |
 |---|---|---|
-| **Frequency of low-grade pain (sweeps, dread)** | Daily | 8/8 on-topic interviewees |
-| **Frequency of acute pain (point loss, missed deadline)** | At least 1× per semester per student | 6/8 named a recent specific event |
-| **Time cost** | 30–60 min/day, plus 1 hr/week ritual planning | TS-3CS quantified directly; corroborated by behavior in 4 others |
-| **Grade cost** | 2–5 points per incident, multiple incidents per semester | LB-3CS, AK, DK, TS-3CS, EM |
+| **Frequency of low-grade pain (sweeps, dread)** | Daily | 10/10 on-topic interviewees |
+| **Frequency of acute pain (point loss, missed deadline)** | At least 1× per semester per student; SH lost an entire course | 8/10 named a recent specific event |
+| **Time cost** | 30–60 min/day, plus 1 hr/week ritual planning | TS-3CS quantified directly; corroborated by behavior in 5 others |
+| **Grade cost** | 2–5 points per incident, multiple incidents per semester; up to a full course failure in the most extreme observed case | LB-3CS, AK, DK, TS-3CS, EM, DT, SH |
 | **Emotional intensity** | Tears, lost sleep, family phone calls, lying to professors, internalized self-blame | EM, TS-3CS, BN, LB-3CS |
 | **Awareness across the ICP** | Universal | "Everyone in my year complains about it. Nobody does anything." — RM (archil-02) |
 

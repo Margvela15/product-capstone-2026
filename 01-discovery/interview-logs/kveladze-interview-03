@@ -1,0 +1,128 @@
+# Interview Log — Kveladze 03
+
+## Participant Profile
+
+| Field | Value |
+|------|------|
+| Pseudonym or initials | SH |
+| Role or occupation | Third-year Computer Science student at KIU |
+| Relevant context (why do they match your ICP?) | Five courses this semester, three project-based (Software Engineering, Databases, Mobile Development). Self-identifies as someone who has "never tried" any tool to manage coursework. The opposite of VG (kveladze-01) who tried everything. |
+| How recruited | Recruited deliberately because I wanted a counter-segment to VG. A classmate described SH as "the guy who just deals with it." |
+| Interview date | 2026-04-05 |
+| Interview duration (minutes) | 24 |
+| Interview format | In-person, KIU corridor |
+| Interviewer(s) | Giorgi Kveladze |
+
+---
+
+## Interview Setting
+Hallway bench between his Databases lab and his Mobile Development lecture. He had ~25 minutes and used most of them.
+
+---
+
+## Verbatim Quotes
+
+### Quote 1
+**Context (what question prompted this):** Asked what tools he uses to keep up with his coursework.
+
+> "Nothing. I do not use anything. I open Moodle when I remember and I open Teams when someone tells me to. I do not have a system."
+
+**What this tells us:** He is not the technical-tinkerer type from kveladze-01. He has never been an active solver of this problem. This is a different ICP sub-segment — the *passive sufferer*.
+
+---
+
+### Quote 2
+**Context:** Asked whether he has ever tried to set up a calendar or any reminder system.
+
+> "Once. In first year. My mother told me to. I tried for like a week and I forgot to update it and that was it. I did not try again."
+
+**What this tells us:** A single failed attempt at adoption two years ago, prompted by an external person (his mother), and never repeated. The pattern of learned helplessness exists even in students who never invested heavily — one failure was enough.
+
+---
+
+### Quote 3
+**Context:** Asked how often he misses deadlines.
+
+> "Maybe twice a semester. Sometimes three times. Last semester I failed one course and I think two of those points were from missed assignments. I am not sure exactly. I do not keep track of why I lose points."
+
+**What this tells us:** This is the most painful single quote in any interview I have conducted. He has *failed a course* and is not entirely sure how much of that failure was attributable to platform-fragmentation misses. The cost is not only invisible to professors; it is invisible to *the student himself*. He does not have a clear causal model of his own grade penalties.
+
+---
+
+### Quote 4
+**Context:** Asked who tells him about deadlines if he is not checking himself.
+
+> "My friends. Or nobody. Sometimes I find out the day of. Sometimes I find out the day after, when somebody asks me where my submission is."
+
+**What this tells us:** He is downstream of the "askers" in his social network — he is the silent counterpart to BN's group meme story. The people BN mocks (the ones who never know what is going on) are real and SH is one of them. He is also the person whose existence justifies BN's daily asking.
+
+---
+
+### Quote 5
+**Context:** Asked whether he thinks the problem is his fault.
+
+> "Yes. I mean, the information is there if I look. I just do not look. So it is on me. I am bad at this. Some people are good at it and I am bad at it."
+
+**What this tells us:** Total internalization of structural failure as personal inadequacy. Compare this directly with EM (nikoloz-04): "I am the system now and the system is bad" — same self-blame, but EM at least describes herself as a *system*. SH does not even reach that abstraction. He is just "bad at this."
+
+---
+
+## Current Workarounds
+
+1. **Nothing.** Genuinely no tool, no calendar, no notebook, no Notion, no group asker dependency that he initiates himself. The closest thing to a workaround is "friends sometimes mention things."
+2. **Reactive recovery.** When he finds out late, he attempts to submit late or accepts the loss. There is no preventive workaround at all.
+3. **Resignation.** "I do not keep track of why I lose points."
+
+This is the *absence* of workarounds — the most extreme version of the failure mode our problem statement describes.
+
+---
+
+## Key Observations
+
+- He spoke about his own grade penalties with no visible emotion. Not embarrassed, not angry. Flat.
+- Took no notes during the interview, did not look at his phone, did not seem distracted — he was paying attention. This is not a careless person. He is a *defeated* one.
+- When I asked the "is it your fault" question I was bracing for him to push back. He agreed immediately without negotiation.
+
+---
+
+## Preliminary Insights
+
+- The "passive sufferer" segment is real and may be larger than the active-tinkerer segment (VG-style). It is the group that has *never* engaged with any solution.
+- They are the hardest segment to reach with any tool because they will not seek a tool out. They will only adopt one if it is introduced to them by another person — the asker, the bridge — inside their existing social graph.
+- They have already internalized structural failure as personal failure. Any solution we eventually build needs to *repair* that framing, not reinforce it. A tool that says "you missed three deadlines this week" lands on top of existing self-blame and may make adoption *worse*.
+- The cost on this segment is opaque even to the sufferer. SH cannot tell me how many of his lost points came from platform misses versus other causes. The pain is real but un-quantified, which makes it hard for him to motivate change on his own.
+
+---
+
+## JTBD Frame
+
+"SH has not hired anything to do this job. He has accepted that the job will not be done well and has built his identity around being 'bad at this.' The functional job is not being performed. The emotional job is preserving self-image by labeling the failure as a personal trait rather than a systemic problem."
+
+---
+
+## Open Questions
+
+- How many third-year CS students fall into the passive-sufferer segment? My guess after this interview is meaningful — maybe 20-30% of the cohort.
+- Would a tool *introduced to him by a friend* be adopted, even if he would never seek one out? This is the distribution-channel question.
+- Is the self-blame reversible? If a tool worked for one semester would he stop describing himself as "bad at this"?
+
+---
+
+## ICP Fit Assessment
+
+**Strong fit.** Third-year KIU CS student, five courses (three project-based), inside the platform-fragmentation failure mode. Distinct sub-segment from the previously interviewed students (passive sufferer rather than active tinkerer or asker). Adds new signal, not duplicate.
+
+---
+
+## Interviewer Reflection
+
+**Most important thing learned:**
+The passive-sufferer segment exists and is qualitatively different from everyone else we have interviewed. They are not failing because their tools failed — they never had tools. They are failing because the system never demanded they build any. The implications for distribution and onboarding are large: this group cannot be reached directly, only through the askers/bridges in their own groups.
+
+**What to do differently next time:**
+Do not challenge the self-blame in the moment. I almost said "it is not really your fault" after Quote 5 and I am glad I did not. Pushing back would have changed the conversation and I would have lost the unfiltered version of his framing. Save the reframing for solution-design conversations later, not for discovery.
+
+---
+
+**Committed by:** Giorgi Kveladze
+**Date:** 2026-04-05

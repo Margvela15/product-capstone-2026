@@ -2,7 +2,7 @@
 
 **Team:** KIU Capstone Team
 **Date compiled:** 2026-04-08
-**Inputs:** `affinity-map.md` and the 8 on-topic interview logs in `01-discovery/interview-logs/`
+**Inputs:** `affinity-map.md` and the 10 on-topic interview logs in `01-discovery/interview-logs/`
 
 This document moves from clusters to *patterns*: the recurring causal structures that show up across multiple interviews and that explain why the problem persists. Each pattern is named, supported by evidence from at least two independent interviewees, and translated into a design implication.
 
@@ -15,6 +15,7 @@ This document moves from clusters to *patterns*: the recurring causal structures
 **Evidence (independent interviewees):**
 - LB-3CS (hw1-wazowski37-01): Moodle → Teams → group chat sequence described as a normal opening.
 - AK (archil-01): "Three places for one homework."
+- DT (archil-03): A single Moodle-only professor forces daily polling for one course "even on weekends."
 - EM (nikoloz-04): Checks the platform a professor *usually* uses; fails when the professor breaks pattern.
 - TS-3CS (hw1-wazowski37-02): Sunday list-making ritual lasting ~1 hour.
 
@@ -36,6 +37,8 @@ This document moves from clusters to *patterns*: the recurring causal structures
 - TS-3CS: Sunday list "wrong by Tuesday"; groupmate's shared Notion page silently outdated.
 - EM (nikoloz-04): "Every system I tried needed me to update it."
 - AK (archil-01): Switched to *paper* because every digital tool had notification overhead.
+- DT (archil-03): Switched to *printing* assignments on first sight, independently arrived at the same analog-distrust workaround as AK.
+- SH (kveladze-03): The extreme case — tried *one* tool once in first year, abandoned it within a week, has done nothing since. Learned helplessness without ever investing.
 
 **Why it persists:** Maintenance is invisible work. The cost of *adopting* a tool is felt and accepted; the cost of *sustaining* it accumulates silently and the student abandons the tool without ever consciously deciding to.
 
@@ -75,7 +78,7 @@ This is the strongest single constraint our discovery surfaced.
 |---|---|---|
 | **Time** | TS-3CS: ~40 min/day, ~1 hr Sunday list. LB-3CS: continuous platform sweeps. | Easy to count. The axis we already had. |
 | **Grades** | LB-3CS: 2 points. AK: 5 points. DK: lost points on wrong-version submission. EM: 9pm-discovered quiz. | Discrete, dated, painful. Also already in our model. |
-| **Integrity / Identity** | TS-3CS: lied about a family emergency, "I felt like a loser." EM: "I am the system and the system is bad." BN: absorbs the social meme cost; tried not asking, missed two things, returned to asking. LB-3CS: "background dread of missing something I didn't even know existed." | New axis. Not in Lab 2 statement. The most emotionally weighty in interviews. |
+| **Integrity / Identity** | TS-3CS: lied about a family emergency, "I felt like a loser." EM: "I am the system and the system is bad." BN: absorbs the social meme cost; tried not asking, missed two things, returned to asking. LB-3CS: "background dread of missing something I didn't even know existed." SH (kveladze-03): "I am bad at this. Some people are good at it and I am bad at it." — total internalization of structural failure as personal trait. | New axis. Not in Lab 2 statement. The most emotionally weighty in interviews. |
 
 **Why it persists:** The integrity axis is invisible from the outside. Professors see late submissions, not the lying that recovers them. Teammates see asking, not the meme cost paid by the asker. Even the affected students often do not name it until pressed. This invisible axis is the most underweighted dimension of the problem.
 
@@ -89,8 +92,10 @@ This is the strongest single constraint our discovery surfaced.
 
 **Evidence:**
 - RM (archil-02): Self-described "bridge" between team Discord and professor Teams. "Right now it is me, and I hate it."
+- DT (archil-03): "Screenshot relay" — the bridge function performed by image artifact, where one teammate screenshots Teams posts into Discord. Same role, different artifact.
 - BN (kveladze-02): The "asker" — pays social cost (group meme) so the group does not miss things.
 - BN (kveladze-02): Identified the counter-segment — the non-asker who is failing two courses.
+- SH (kveladze-03): The non-asker himself, in his own words. Confirms BN's counter-segment exists and shows what it looks like from inside (silent, defeated, self-blaming).
 - LB-3CS (hw1-wazowski37-01): Implicit non-asker who relies on the asker: "I just hope someone in the group chat will say something."
 
 **Why it persists:** Group projects amplify the cost (more deadlines, more channels) and create social pressure to delegate the bridging work to whoever is willing. Once a bridge or asker exists, the others rationally free-ride, which entrenches the role.

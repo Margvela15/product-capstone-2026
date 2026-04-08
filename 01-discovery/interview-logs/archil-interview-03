@@ -1,0 +1,129 @@
+# Interview Log — Archil 03
+
+## Participant Profile
+
+| Field | Value |
+|------|------|
+| Pseudonym or initials | DT |
+| Role or occupation | Third-year Computer Science student at KIU |
+| Relevant context (why do they match your ICP?) | Currently enrolled in 5 courses, 3 of them project-based (Operating Systems, Software Engineering, Web Development). Her OS professor uses Moodle exclusively; her project group communicates entirely on Discord. Inverse pattern of RM (archil-02), where the team also splits but the imbalance is on the other side. |
+| How recruited | Mutual classmate from Operating Systems lab. I asked her if she would talk for 30 minutes about how she keeps up with assignments across her courses. I did not mention any product idea. |
+| Interview date | 2026-04-05 |
+| Interview duration (minutes) | 27 |
+| Interview format | In-person, KIU library |
+| Interviewer(s) | Archil Margvelashvili |
+
+---
+
+## Interview Setting
+Library reading room. She had her laptop closed and a printed Moodle page in her hand when I arrived — she had just printed an assignment because she "could not trust" she would find it again later.
+
+---
+
+## Verbatim Quotes
+
+### Quote 1
+**Context (what question prompted this):** Asked her how she found out about her last assignment.
+
+> "My OS professor only posts on Moodle. Nothing in Teams. Nothing in chat. So if I do not check Moodle every day for that one course, I miss things. I check Moodle every day because of him, even on weekends."
+
+**What this tells us:** A single professor's inconsistent platform choice is enough to force a student into daily polling for a single course. The cost is paid even on days when nothing has been posted, because the *possibility* of a post requires the check.
+
+---
+
+### Quote 2
+**Context:** Asked how that interacts with her other courses.
+
+> "My Web Dev professor is the opposite. He posts in Teams and never in Moodle. So I check Moodle for OS, and Teams for Web Dev, and the Software Engineering professor uses both, so I check both for him too."
+
+**What this tells us:** Each professor has a personal platform preference. The student's daily routine is the *union* of all professor preferences. There is no shared standard, and the student is the one absorbing the integration cost across faculty.
+
+---
+
+### Quote 3
+**Context:** Asked about her project group and how they coordinate.
+
+> "We all use Discord. Always Discord. The professors do not see Discord. We use it because it is fast and because we can complain about the homework without anyone seeing. If a professor posted something important in Teams I would only see it because someone in Discord screenshots it and pastes it."
+
+**What this tells us:** This corroborates the pattern Archil-02 (RM) raised: students deliberately keep Discord separate from professor channels for social/emotional safety. Information *flows* into Discord via screenshots posted by whichever team member happens to see it first — informal, lossy, and dependent on one person being awake.
+
+---
+
+### Quote 4
+**Context:** Asked about her last grade penalty incident.
+
+> "Last month. The OS professor changed the submission format to a single zip file in a Moodle update. I had not opened that course on Moodle for two days because I was working on Web Dev. He took three points and the comment was 'see Moodle announcement.' I saw it three days later."
+
+**What this tells us:** Concrete, recent, dated, quantified. Three points lost from a 48-hour gap on a single platform. The penalty is small in isolation but recurring across courses.
+
+---
+
+### Quote 5
+**Context:** Asked what she does to try to prevent this.
+
+> "I print things now. I print the assignment when I see it because I do not trust anything to be in the same place when I come back. It is wasteful and I know it is wasteful. I do it anyway."
+
+**What this tells us:** Her chosen workaround is *physical printing*. Like AK's paper notebook, the winning strategy is analog because it has zero notification cost and zero risk of being moved. She is aware it is irrational and does it anyway. Same pattern as AK, independently arrived at.
+
+---
+
+## Current Workarounds
+
+1. **Daily Moodle check for the OS course**, regardless of whether anything is expected — pure precautionary polling.
+2. **Parallel Teams check for the Web Dev course** — same precaution, different platform.
+3. **Discord screenshot relay** — implicit reliance on a teammate to forward any Teams posts she might miss.
+4. **Printing assignments on first sight** — defensive analog backup against information moving or disappearing.
+5. **No calendar, no Notion, no automation.** Tried Google Calendar in second year, abandoned within "maybe two weeks" because of manual entry friction. Same "extra homework" pattern as LB-3CS.
+
+---
+
+## Key Observations
+
+- She brought a *printed* Moodle page to the interview without being asked. That single physical artifact is the most concrete summary of her problem.
+- Said "I check Moodle every day because of him" without irritation — fully normalized.
+- Used the word "wasteful" about her own printing and immediately said she would keep doing it. Self-aware about the absurdity, still trapped in it.
+- Did not blame any professor. Blamed the *lack of a shared standard*.
+
+---
+
+## Preliminary Insights
+
+- A single professor's idiosyncratic platform choice can dominate a student's daily routine for an entire course.
+- The Discord/Teams separation observed in archil-02 is not specific to one team — DT's group does it too, for the same social-safety reason.
+- The "informal-channel screenshot relay" is a hidden coordination mechanism we had not named before. One teammate sees a Teams post, screenshots it, posts to Discord, and the rest of the team learns from the screenshot. This is a *human bridge* function performed informally and unreliably.
+- Analog workarounds (printing, paper notebooks) keep winning across independent interviews because they are immune to platform changes and notification noise.
+
+---
+
+## JTBD Frame
+
+"DT is hiring daily polling and physical printouts to do the job of preserving access to coursework that she cannot trust to remain reachable digitally. The functional job is making sure she does not lose track of what is due. The emotional job is feeling she has a backup. The social job is being a teammate her group can rely on, even if her group is the one who screenshots Teams for her."
+
+---
+
+## Open Questions
+
+- How prevalent is the "screenshot relay" pattern across project groups? Is one person always the screenshotter, like the asker role in BN's group?
+- Would DT actually trust a digital tool given that her current strategy is physical printouts? She has crossed a threshold into analog distrust.
+- Does the specific professor mix (one Moodle-only, one Teams-only) make her worse off than students whose professors are all on the same platform?
+
+---
+
+## ICP Fit Assessment
+
+**Strong fit.** Third-year KIU CS student, five courses (three project-based), professors split across Moodle and Teams in a way that forces daily multi-platform polling. Exactly the segment our committed problem statement targets.
+
+---
+
+## Interviewer Reflection
+
+**Most important thing learned:**
+The "screenshot relay" — one team member acts as the human bridge from Teams into Discord by literally taking screenshots — is a coordination mechanism we have not named in any synthesis document yet. It is the same functional pattern as RM's "bridge person" role, but the artifact is different (screenshots vs verbal updates). Worth pulling into patterns analysis.
+
+**What to do differently next time:**
+Ask immediately whether the interviewee or one of their teammates is the "screenshotter" or "bridge" or "asker" — these roles keep appearing and they are the cleanest segmentation signal I have found.
+
+---
+
+**Committed by:** Archil Margvelashvili
+**Date:** 2026-04-05
