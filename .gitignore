@@ -1,0 +1,22 @@
+# AI/assistant-generated workspace docs
+CLAUDE.md
+tools-setup.md
+.cursor/
+
+# Lab materials to keep out of this repo
+Lab-3/
+Lab-4/
+Lab-5/
+Lab-6/
+Lab-7/
+Lab_1/
+lab-2/
+
+# Common local/editor/temp artifacts
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
