@@ -11,10 +11,10 @@
 
 | Person | Owner | Track | Files Owned | Status |
 |--------|-------|-------|-------------|--------|
-| Person 1 | Archil Margvelashvili | Product Owner / Roadmap | `03-build/roadmap/product-roadmap.md`, this split file | Done in first commit |
-| Person 2 | Nikoloz Jvebenava | Sprint Planning / Process | `03-build/roadmap/sprint-1-plan.md`, `03-build/workflow/process-map.md` | To do in second commit |
-| Person 3 | Giorgi Papidze | Technical Architecture | `03-build/architecture/system-design.md`, `03-build/architecture/tech-stack.md`, `03-build/architecture/architecture-diagram-source.md`, `03-build/architecture/architecture-diagram.png` | To do by teammate |
-| Person 4 | Giorgi Kveladze | Risk and Experiment | `03-build/architecture/risk-register.md`, `03-build/experiments/experiment-plan.md`, optional `docs/ai-usage-log.md` update | To do by teammate |
+| Person 1 | Giorgi Papidze | Product Owner / Roadmap | `03-build/roadmap/product-roadmap.md`, this split file | Done in first commit |
+| Person 2 | Giorgi Kveladze | Sprint Planning / Process | `03-build/roadmap/sprint-1-plan.md`, `03-build/workflow/process-map.md` | Done in second commit |
+| Person 3 | Archil Margvelashvili | Technical Architecture | `03-build/architecture/system-design.md`, `03-build/architecture/tech-stack.md`, `03-build/architecture/architecture-diagram-source.md`, `03-build/architecture/architecture-diagram.png` | To do by teammate |
+| Person 4 | Nikoloz Jvebenava | Risk and Experiment | `03-build/architecture/risk-register.md`, `03-build/experiments/experiment-plan.md`, optional `docs/ai-usage-log.md` update | To do by teammate |
 
 ---
 

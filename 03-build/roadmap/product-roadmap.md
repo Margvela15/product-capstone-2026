@@ -82,9 +82,9 @@ The activation moment is when a user taps **Acknowledge and Add to Plan** on a c
 
 | Team Member | Available Hours (excl. midterm prep) | Story Points Max |
 |-------------|--------------------------------------|-----------------|
-| Archil Margvelashvili | 8 | 5 |
-| Nikoloz Jvebenava | 8 | 5 |
 | Giorgi Papidze | 8 | 5 |
+| Nikoloz Jvebenava | 8 | 5 |
+| Archil Margvelashvili | 8 | 5 |
 | Giorgi Kveladze | 6 | 3 |
 | **Total** | **30** | **18** |
 
@@ -97,8 +97,8 @@ The activation moment is when a user taps **Acknowledge and Add to Plan** on a c
 | Story ID | Story (summary) | Points | Assignee | AI Tool |
 |----------|----------------|--------|----------|---------|
 | S1-01 | As a bridge/asker student, I want to create an account so that my acknowledged updates are saved to my own workspace. | 3 | Nikoloz Jvebenava | Claude Code |
-| S1-02 | As a bridge/asker student, I want to add or simulate my active courses so that KIU Nexus can show relevant updates. | 2 | Archil Margvelashvili | Cursor |
-| S1-03 | As a bridge/asker student, I want to see a prioritized dashboard so that I can skip the daily manual sweep. | 3 | Giorgi Papidze | Stitch + Cursor |
+| S1-02 | As a bridge/asker student, I want to add or simulate my active courses so that KIU Nexus can show relevant updates. | 2 | Giorgi Papidze | Cursor |
+| S1-03 | As a bridge/asker student, I want to see a prioritized dashboard so that I can skip the daily manual sweep. | 3 | Archil Margvelashvili | Stitch + Cursor |
 | S1-04 | As a bridge/asker student, I want to acknowledge a critical update so that it is added to my weekly plan and counted as handled. | 2 | Giorgi Kveladze | Cursor |
 | **Sprint 1 Total** | | **10** | | |
 
@@ -127,8 +127,8 @@ The activation moment is when a user taps **Acknowledge and Add to Plan** on a c
 
 | Story ID | Story (summary) | Points | Assignee | AI Tool |
 |----------|----------------|--------|----------|---------|
-| S2-01 | As a returning student, I want a weekly plan board so that acknowledged updates stay visible until completed. | 3 | Archil Margvelashvili | Stitch + Cursor |
-| S2-02 | As a product team, we want Mixpanel tracking so that we can measure activation and retention. | 3 | Giorgi Papidze | Cursor |
+| S2-01 | As a returning student, I want a weekly plan board so that acknowledged updates stay visible until completed. | 3 | Giorgi Papidze | Stitch + Cursor |
+| S2-02 | As a product team, we want Mixpanel tracking so that we can measure activation and retention. | 3 | Archil Margvelashvili | Cursor |
 | S2-03 | As a student, I want messy update text parsed into action cards so that I do not read long noisy threads. | 5 | Nikoloz Jvebenava | Google AI Studio |
 | S2-04 | As a tester, I want basic usability session notes so that the team can fix the highest-friction points before Checkpoint 3. | 1 | Giorgi Kveladze | None |
 | **Sprint 2 Total** | | **12** | | |
@@ -157,9 +157,9 @@ The activation moment is when a user taps **Acknowledge and Add to Plan** on a c
 | Story ID | Story (summary) | Points | Assignee | AI Tool |
 |----------|----------------|--------|----------|---------|
 | S3-01 | As a bridge student, I want to invite teammates to a course workspace so that update visibility is shared. | 3 | Giorgi Kveladze | Cursor |
-| S3-02 | As a bridge student, I want to see who acknowledged an update so that I stop paying the reputational cost of asking repeatedly. | 5 | Giorgi Papidze | Cursor |
+| S3-02 | As a bridge student, I want to see who acknowledged an update so that I stop paying the reputational cost of asking repeatedly. | 5 | Archil Margvelashvili | Cursor |
 | S3-03 | As a student, I want to manage source connections from one setup screen so that the system feels low-maintenance. | 3 | Nikoloz Jvebenava | Stitch + Cursor |
-| S3-04 | As a team, we want referral/invite events tracked so that we can measure whether bridge users bring teammates in. | 2 | Archil Margvelashvili | Cursor |
+| S3-04 | As a team, we want referral/invite events tracked so that we can measure whether bridge users bring teammates in. | 2 | Giorgi Papidze | Cursor |
 | **Sprint 3 Total** | | **13** | | |
 
 ### Sprint 3 Risks
@@ -185,8 +185,8 @@ The activation moment is when a user taps **Acknowledge and Add to Plan** on a c
 
 | Story ID | Story (summary) | Points | Assignee | AI Tool |
 |----------|----------------|--------|----------|---------|
-| S4-01 | As a first-time demo user, I want polished empty/loading/error states so that the product feels reliable. | 3 | Giorgi Papidze | Cursor |
-| S4-02 | As a team, we want a clean analytics summary so that Demo Day claims are backed by evidence. | 2 | Archil Margvelashvili | Cursor |
+| S4-01 | As a first-time demo user, I want polished empty/loading/error states so that the product feels reliable. | 3 | Archil Margvelashvili | Cursor |
+| S4-02 | As a team, we want a clean analytics summary so that Demo Day claims are backed by evidence. | 2 | Giorgi Papidze | Cursor |
 | S4-03 | As a target student, I want the critical update flow to be clear without explanation so that I can trust it quickly. | 3 | Nikoloz Jvebenava | Stitch + Cursor |
 | **Sprint 4 Total** | | **8** | | |
 
@@ -233,7 +233,7 @@ The activation moment is when a user taps **Acknowledge and Add to Plan** on a c
 
 | Date | Version | Changes | Author |
 |------|---------|---------|--------|
-| 2026-05-04 | 1.0 | Initial roadmap and MVP scope | Archil Margvelashvili |
+| 2026-05-04 | 1.0 | Initial roadmap and MVP scope | Giorgi Papidze |
 
 ---
 
