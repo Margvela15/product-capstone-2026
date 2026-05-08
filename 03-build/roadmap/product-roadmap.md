@@ -2,7 +2,7 @@
 
 **Team:** KIU Capstone Team  
 **Product:** KIU Nexus  
-**Date:** 2026-05-04  
+**Date:** 2026-05-08  
 **Version:** 1.0  
 **Sprint Arc:** April 24 to June 11 2026 (4 sprints, 8 weeks)
 
@@ -12,52 +12,46 @@
 
 ### What We Are Building
 
-KIU Nexus is a unified academic command center for third-year KIU Computer Science students who lose time, grades, and confidence because course updates are scattered across Moodle, MS Teams, Messenger, Discord, and WhatsApp. The MVP focuses on the smallest flow that proves value: a student connects or simulates their course sources, sees a prioritized digest of critical academic updates, opens one critical item, and acknowledges it into a weekly action plan.
+KIU Nexus is a Unified Academic Command Center designed for university students who struggle with fragmented academic communication spread across multiple platforms such as LMS systems, Facebook groups, email, messaging applications, and class chats. The product aggregates academic updates into a single dashboard, prioritizes critical announcements, and helps students acknowledge and plan around important academic tasks and deadlines. The product directly addresses the repeated discovery insight that students perform a daily "sweep ritual" across multiple channels because they fear missing critical academic information.
 
 ### North Star Metric
 
 > Weekly critical academic updates acknowledged per active user
 
-### Activation Moment
-
-The activation moment is when a user taps **Acknowledge and Add to Plan** on a critical academic update. This maps to the analytics event `critical_update_acknowledged`.
-
 ### In Scope (Sprints 1 to 4)
 
 | Feature | Sprint | Interview Evidence |
 |---------|--------|--------------------|
-| Account setup and basic onboarding | Sprint 1 | Users need zero-maintenance setup; Pattern 2 shows tools fail when setup becomes extra homework. |
-| Manual or seeded course-source setup for MVP testing | Sprint 1 | VG and LB-3CS tried tools that failed during maintenance; Sprint 1 needs controlled inputs before real integrations. |
-| Nexus Dashboard with prioritized updates | Sprint 1 | Pattern 1: students perform a daily sweep across 2-4 platforms before starting work. |
-| Critical update detail view | Sprint 1 | LB-3CS and AK lost points from missed formatting or hidden requirements. |
-| Acknowledge and Add to Plan action | Sprint 1 | NSM requires a measurable value action tied to reduced missed information. |
-| Weekly plan board for acknowledged critical items | Sprint 2 | TS-3CS described Sunday planning that becomes wrong by Tuesday. |
-| Mixpanel event instrumentation for activation and retention | Sprint 2 | Lab 5 schema requires `critical_update_acknowledged` and `weekly_review_completed`. |
-| AI-assisted parsing of messy update text into action cards | Sprint 2 | Pattern 3 shows users need "important things only" filtering, not another raw feed. |
-| Project Group Sync seen/acknowledged status | Sprint 3 | Pattern 5 shows bridge/asker students absorb group coordination cost. |
-| Integration & Bot Management screen for platform connection flow | Sprint 3 | Pattern 6 requires respecting informal/formal channel separation instead of forcing one merged workspace. |
-| Usability fixes and demo polish | Sprint 4 | Trust hole observation: users will not forgive first-day failures in coursework tooling. |
-| Demo-ready analytics dashboard and story evidence | Sprint 4 | Checkpoint 3 and Demo Day require product progress plus measurement evidence. |
+| Unified academic dashboard | Sprint 1 | Interview 2 — student described checking multiple platforms every morning to avoid missing updates |
+| User authentication | Sprint 1 | Interview 5 — students wanted personalized academic feeds |
+| Critical update prioritization | Sprint 1 | Interview 4 — "I missed a deadline change because it got buried in messages." |
+| Critical update detail screen | Sprint 1 | Interview 1 — students wanted one clear source of truth for urgent items |
+| Acknowledge and Add to Plan flow | Sprint 1 | Interview 3 — students wanted a way to immediately act on updates |
+| Event tracking and analytics | Sprint 2 | Needed to measure activation and retention behavior |
+| Reminder and notification system | Sprint 2 | Interview 6 — users often forget updates after initially seeing them |
+| Calendar and study planning integration | Sprint 3 | Interview 7 — students manually transfer updates into planners |
+| Improved prioritization and filtering | Sprint 3 | Interview 8 — students complained about noisy announcement streams |
+| Demo-ready deployment and polish | Sprint 4 | Required for Demo Day and real user testing |
 
 ### Out of Scope (MVP Phase)
 
 | Feature | Reason Out of Scope |
 |---------|---------------------|
-| Full live Moodle scraping | High technical and policy risk; Sprint 1 can use seeded/manual data to test activation first. |
-| Full live Teams/Discord/Messenger automation | Requires permissions and platform-specific work that is too large before activation is validated. |
-| Mobile native apps | Web MVP is enough for Sprint 1 and Vercel deployment; native apps do not change activation. |
-| Professor-facing admin portal | Our ICP is the student bridge/asker, not professors. |
-| Paid subscription and billing | Revenue is not required to prove the academic update acknowledgement loop. |
-| Automatic grade impact prediction | Interesting but not required for the core acknowledgement flow. |
+| Native Android and iOS apps | Web-first MVP is sufficient for activation moment |
+| AI-generated study summaries | Useful but not necessary for core activation |
+| Parent or instructor dashboards | Does not directly support student activation moment |
+| Cross-university support | Product is validated only for KIU users |
+| Social discussion boards | Outside core problem of fragmented academic updates |
+| Grade prediction system | Requires additional data and validation |
 
 ### Explicitly Rejected
 
 | Feature | Why Rejected |
 |---------|-------------|
-| Force all group communication into KIU Nexus | Pattern 6 shows students protect informal channels; forced migration would be rejected. |
-| Generic calendar replacement | Interviewees already abandoned calendar-style tools because manual upkeep feels like extra homework. |
-| Notification-only product | Pattern 3 shows the problem is signal quality, not lack of notifications. |
-| Social chat clone | Does not solve the formal/informal fragmentation problem and risks adding more noise. |
+| General-purpose messaging platform | Product solves academic coordination, not social communication |
+| Full LMS replacement | Discovery showed the issue is fragmented updates, not the LMS itself |
+| Anonymous posting system | Introduces moderation complexity unrelated to activation |
+| Cryptocurrency or gamification rewards | No interview evidence supporting value |
 
 ---
 
@@ -65,28 +59,28 @@ The activation moment is when a user taps **Acknowledge and Add to Plan** on a c
 
 | Sprint | Dates | Theme | Key Deliverable | Checkpoint |
 |--------|-------|-------|-----------------|-----------|
-| Sprint 1 | Apr 24 to May 7 | Activation | User can complete onboarding, view seeded critical updates, and acknowledge one into a plan | Midterm Apr 30 -- dev continues async |
-| Sprint 2 | May 8 to May 21 | Measurement | User can review a weekly plan and activation/retention events are live in Mixpanel | Checkpoint 3 May 21 |
-| Sprint 3 | May 22 to Jun 4 | Collaboration | Bridge/asker can see group acknowledgement status and reduce repeated reminder messages | Peer Assessment Jun 4 |
-| Sprint 4 | Jun 5 to Jun 11 | Demo | Product is stable, polished, deployed, and ready for Demo Day story | Demo Day Jun 11 |
+| Sprint 1 | Apr 24 to May 7 | Foundation | Core update flow working end to end | Midterm Apr 30 — dev continues async |
+| Sprint 2 | May 8 to May 21 | Instrumentation | Analytics and notifications live | Checkpoint 3 May 21 |
+| Sprint 3 | May 22 to Jun 4 | Optimization | Smarter prioritization and planning features | Peer Assessment Jun 4 |
+| Sprint 4 | Jun 5 to Jun 11 | Demo | Stable demo-ready deployed MVP | Demo Day Jun 11 |
 
 ---
 
-## Sprint 1: Activation
+## Sprint 1: Foundation
 
 **Dates:** April 24 to May 7 2026  
-**Sprint Goal:** A student can onboard, view a prioritized critical update, acknowledge it, and see it added to a weekly plan.  
-**Demo:** Live deployed flow from signup/onboarding through `critical_update_acknowledged` and confirmation.
+**Sprint Goal:** A user can sign up, view prioritized academic updates, open a critical update, and acknowledge it inside a deployed application.  
+**Demo:** Live walkthrough of the KIU Nexus dashboard, critical update flow, and acknowledgement interaction.
 
 ### Capacity
 
 | Team Member | Available Hours (excl. midterm prep) | Story Points Max |
 |-------------|--------------------------------------|-----------------|
-| Giorgi Papidze | 8 | 5 |
-| Nikoloz Jvebenava | 8 | 5 |
-| Archil Margvelashvili | 8 | 5 |
-| Giorgi Kveladze | 6 | 3 |
-| **Total** | **30** | **18** |
+| Archil Margvelashvili | 18 | 5 |
+| Nikoloz Jvebenava | 18 | 5 |
+| Giorgi Papidze | 20 | 6 |
+| Giorgi Kveladze | 16 | 4 |
+| **Total** | | **20** |
 
 **Sprint 1 commitment:** 10 story points (56% of maximum -- target 60% or below)
 
@@ -234,6 +228,7 @@ The activation moment is when a user taps **Acknowledge and Add to Plan** on a c
 | Date | Version | Changes | Author |
 |------|---------|---------|--------|
 | 2026-05-04 | 1.0 | Initial roadmap and MVP scope | Giorgi Papidze |
+| 2026-05-08 | 1.0 | Initial roadmap | Nikoloz Jvebenava |
 
 ---
 
