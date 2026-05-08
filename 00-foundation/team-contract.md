@@ -1,6 +1,6 @@
 # Team Contract – Product Capstone 2026
 
-**Team Name:** [Your Team Name]  
+**Team Name:** Undefined Behaviour
 **Course:** CS-PD-2026  
 **Date Created:** March 23, 2026  
 **Last Updated:** March 23, 2026
