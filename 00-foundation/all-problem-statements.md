@@ -42,7 +42,6 @@ Students managing multiple group projects at KIU repeatedly lose track of decisi
 ---
 
 ## Member 4: Giorgi Kveladze
-
 ### Hairband (Personal Problem)
 I (a university student attending back-to-back lectures) often forget key points or action items from lectures because I rely on scattered notes across notebooks, phone apps, and screenshots, leading to spending 15–20 minutes later trying to reconstruct what was covered.
 
