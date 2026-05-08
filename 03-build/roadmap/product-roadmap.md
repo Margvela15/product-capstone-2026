@@ -2,23 +2,83 @@
 
 **Team:** KIU Capstone Team  
 **Product:** KIU Nexus  
+<<<<<<< HEAD
 **Date:** 2026-05-08  
 **Version:** 1.0  
+=======
+**Date:** 2026-05-04  
+**Version:** 1.1  
+>>>>>>> 63155d00958b78cb0e9a130a74fc95a6be9eac93
 **Sprint Arc:** April 24 to June 11 2026 (4 sprints, 8 weeks)
 
 ---
 
-## MVP Scope
+# MVP Scope
 
-### What We Are Building
+## What We Are Building
 
+<<<<<<< HEAD
 KIU Nexus is a Unified Academic Command Center designed for university students who struggle with fragmented academic communication spread across multiple platforms such as LMS systems, Facebook groups, email, messaging applications, and class chats. The product aggregates academic updates into a single dashboard, prioritizes critical announcements, and helps students acknowledge and plan around important academic tasks and deadlines. The product directly addresses the repeated discovery insight that students perform a daily "sweep ritual" across multiple channels because they fear missing critical academic information.
+=======
+KIU Nexus is a unified academic command center for third-year KIU Computer Science students who lose time, grades, and confidence because course updates are scattered across Moodle, MS Teams, Messenger, Discord, and WhatsApp.
+>>>>>>> 63155d00958b78cb0e9a130a74fc95a6be9eac93
 
-### North Star Metric
+The MVP focuses on the smallest flow that proves value:
+
+A student connects or simulates their course sources, sees a prioritized digest of critical academic updates, opens one critical item, and acknowledges it into a weekly action plan.
+
+---
+
+## North Star Metric
 
 > Weekly critical academic updates acknowledged per active user
 
+<<<<<<< HEAD
 ### In Scope (Sprints 1 to 4)
+=======
+---
+
+## Activation Moment
+
+The activation moment is when a user taps **Acknowledge and Add to Plan** on a critical academic update.
+
+This maps to the analytics event:
+
+`critical_update_acknowledged`
+
+---
+
+## Story Writing Standard
+
+All stories in this roadmap were reviewed against INVEST criteria:
+
+- Independent
+- Negotiable
+- Valuable
+- Estimable
+- Small
+- Testable
+
+Stories estimated above 8 points were split before sprint allocation.
+
+---
+
+## Capacity Planning Approach
+
+Theoretical sprint capacity assumes full availability, but the team commits to approximately 60% of maximum capacity to account for:
+
+- AI-generated code review time
+- Midterm overlap during Sprint 1
+- Debugging and integration overhead
+- Team coordination and blockers
+- Prototype iteration and usability fixes
+
+This buffer helps maintain predictable delivery and prevents sprint overcommitment.
+
+---
+
+# In Scope (Sprints 1 to 4)
+>>>>>>> 63155d00958b78cb0e9a130a74fc95a6be9eac93
 
 | Feature | Sprint | Interview Evidence |
 |---------|--------|--------------------|
@@ -33,7 +93,9 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 | Improved prioritization and filtering | Sprint 3 | Interview 8 — students complained about noisy announcement streams |
 | Demo-ready deployment and polish | Sprint 4 | Required for Demo Day and real user testing |
 
-### Out of Scope (MVP Phase)
+---
+
+# Out of Scope (MVP Phase)
 
 | Feature | Reason Out of Scope |
 |---------|---------------------|
@@ -44,7 +106,9 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 | Social discussion boards | Outside core problem of fragmented academic updates |
 | Grade prediction system | Requires additional data and validation |
 
-### Explicitly Rejected
+---
+
+# Explicitly Rejected
 
 | Feature | Why Rejected |
 |---------|-------------|
@@ -55,7 +119,7 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 
 ---
 
-## Sprint Overview
+# Sprint Overview
 
 | Sprint | Dates | Theme | Key Deliverable | Checkpoint |
 |--------|-------|-------|-----------------|-----------|
@@ -66,14 +130,21 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 
 ---
 
+<<<<<<< HEAD
 ## Sprint 1: Foundation
 
 **Dates:** April 24 to May 7 2026  
 **Sprint Goal:** A user can sign up, view prioritized academic updates, open a critical update, and acknowledge it inside a deployed application.  
 **Demo:** Live walkthrough of the KIU Nexus dashboard, critical update flow, and acknowledgement interaction.
+=======
+# Sprint 1: Activation
 
-### Capacity
+**Dates:** April 24 to May 7 2026
+>>>>>>> 63155d00958b78cb0e9a130a74fc95a6be9eac93
 
+## Sprint Goal
+
+<<<<<<< HEAD
 | Team Member | Available Hours (excl. midterm prep) | Story Points Max |
 |-------------|--------------------------------------|-----------------|
 | Archil Margvelashvili | 18 | 5 |
@@ -81,12 +152,35 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 | Giorgi Papidze | 20 | 6 |
 | Giorgi Kveladze | 16 | 4 |
 | **Total** | | **20** |
+=======
+By the end of Sprint 1, a student can onboard, see important academic updates in one place, and acknowledge a critical update into a weekly plan without checking multiple platforms manually.
 
-**Sprint 1 commitment:** 10 story points (56% of maximum -- target 60% or below)
+## Demo
 
-**Rationale for commitment level:** Sprint 1 overlaps with the midterm and first build setup, so we commit only to the end-to-end activation path and defer risky live integrations.
+Live deployed flow from signup/onboarding through `critical_update_acknowledged` and confirmation.
 
-### Stories Allocated to Sprint 1
+---
+
+## Capacity
+
+| Team Member | Available Hours (excluding midterm prep) | Story Points Max |
+|-------------|-------------------------------------------|-----------------|
+| Giorgi Papidze | 8 | 5 |
+| Nikoloz Jvebenava | 8 | 5 |
+| Archil Margvelashvili | 8 | 5 |
+| Giorgi Kveladze | 6 | 3 |
+| **Total** | **30** | **18** |
+>>>>>>> 63155d00958b78cb0e9a130a74fc95a6be9eac93
+
+**Sprint 1 commitment:** 10 story points (56% of maximum capacity)
+
+### Rationale
+
+Sprint 1 overlaps with the midterm and first build setup, so the team commits only to the end-to-end activation path and defers risky live integrations.
+
+---
+
+## Stories Allocated to Sprint 1
 
 | Story ID | Story (summary) | Points | Assignee | AI Tool |
 |----------|----------------|--------|----------|---------|
@@ -94,9 +188,12 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 | S1-02 | As a bridge/asker student, I want to add or simulate my active courses so that KIU Nexus can show relevant updates. | 2 | Giorgi Papidze | Cursor |
 | S1-03 | As a bridge/asker student, I want to see a prioritized dashboard so that I can skip the daily manual sweep. | 3 | Archil Margvelashvili | Stitch + Cursor |
 | S1-04 | As a bridge/asker student, I want to acknowledge a critical update so that it is added to my weekly plan and counted as handled. | 2 | Giorgi Kveladze | Cursor |
-| **Sprint 1 Total** | | **10** | | |
 
-### Sprint 1 Risks
+| **Sprint 1 Total** |  | **10** |  |  |
+
+---
+
+## Sprint 1 Risks
 
 | Risk | Likelihood | Impact | Mitigation |
 |------|-----------|--------|-----------|
@@ -106,18 +203,33 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 
 ---
 
-## Sprint 2: Measurement
+# Sprint 2: Measurement
 
-**Dates:** May 8 to May 21 2026  
-**Sprint Goal:** A returning user can review weekly acknowledged updates and the team can measure activation and retention behavior.  
-**Demo:** Mixpanel shows `updates_digest_viewed`, `critical_update_acknowledged`, and `weekly_review_completed` from the deployed app.  
-**Checkpoint 3 due:** May 21 at 23:59
+**Dates:** May 8 to May 21 2026
 
-### Capacity
+## Sprint Goal
 
-**Sprint 2 commitment:** 12 story points (adjust after Sprint 1 velocity is measured)
+By the end of Sprint 2, a returning student can manage acknowledged updates through a weekly review flow while the product team measures activation and retention behavior through live analytics.
 
-### Stories Allocated to Sprint 2
+## Demo
+
+Mixpanel shows:
+
+- `updates_digest_viewed`
+- `critical_update_acknowledged`
+- `weekly_review_completed`
+
+from the deployed app.
+
+---
+
+## Capacity
+
+**Sprint 2 commitment:** 12 story points
+
+---
+
+## Stories Allocated to Sprint 2
 
 | Story ID | Story (summary) | Points | Assignee | AI Tool |
 |----------|----------------|--------|----------|---------|
@@ -125,9 +237,12 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 | S2-02 | As a product team, we want Mixpanel tracking so that we can measure activation and retention. | 3 | Archil Margvelashvili | Cursor |
 | S2-03 | As a student, I want messy update text parsed into action cards so that I do not read long noisy threads. | 5 | Nikoloz Jvebenava | Google AI Studio |
 | S2-04 | As a tester, I want basic usability session notes so that the team can fix the highest-friction points before Checkpoint 3. | 1 | Giorgi Kveladze | None |
-| **Sprint 2 Total** | | **12** | | |
 
-### Sprint 2 Risks
+| **Sprint 2 Total** |  | **12** |  |  |
+
+---
+
+## Sprint 2 Risks
 
 | Risk | Likelihood | Impact | Mitigation |
 |------|-----------|--------|-----------|
@@ -136,17 +251,27 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 
 ---
 
-## Sprint 3: Collaboration
+# Sprint 3: Collaboration
 
-**Dates:** May 22 to June 4 2026  
-**Sprint Goal:** A bridge/asker can see whether teammates have acknowledged critical updates without repeatedly asking in chat.  
-**Demo:** Team sync view shows acknowledged/unacknowledged status for a shared critical update.
+**Dates:** May 22 to June 4 2026
 
-### Capacity
+## Sprint Goal
 
-**Sprint 3 commitment:** 13 story points (adjust after Sprint 2 velocity)
+By the end of Sprint 3, a bridge/asker student can see whether teammates acknowledged important academic updates without repeatedly sending reminder messages.
 
-### Stories Allocated to Sprint 3
+## Demo
+
+Team sync view shows acknowledged/unacknowledged status for a shared critical update.
+
+---
+
+## Capacity
+
+**Sprint 3 commitment:** 13 story points
+
+---
+
+## Stories Allocated to Sprint 3
 
 | Story ID | Story (summary) | Points | Assignee | AI Tool |
 |----------|----------------|--------|----------|---------|
@@ -154,9 +279,12 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 | S3-02 | As a bridge student, I want to see who acknowledged an update so that I stop paying the reputational cost of asking repeatedly. | 5 | Archil Margvelashvili | Cursor |
 | S3-03 | As a student, I want to manage source connections from one setup screen so that the system feels low-maintenance. | 3 | Nikoloz Jvebenava | Stitch + Cursor |
 | S3-04 | As a team, we want referral/invite events tracked so that we can measure whether bridge users bring teammates in. | 2 | Giorgi Papidze | Cursor |
-| **Sprint 3 Total** | | **13** | | |
 
-### Sprint 3 Risks
+| **Sprint 3 Total** |  | **13** |  |  |
+
+---
+
+## Sprint 3 Risks
 
 | Risk | Likelihood | Impact | Mitigation |
 |------|-----------|--------|-----------|
@@ -165,28 +293,39 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 
 ---
 
-## Sprint 4: Demo
+# Sprint 4: Demo
 
-**Dates:** June 5 to June 11 2026  
-**Sprint Goal:** KIU Nexus is stable, demo-ready, and supported by analytics and user evidence.  
-**Demo Day:** June 11 2026
+**Dates:** June 5 to June 11 2026
 
-### Capacity
+## Sprint Goal
 
-**Sprint 4 commitment:** 8 story points (shorter sprint -- Demo Day prep is primary activity)
+By the end of Sprint 4, KIU Nexus is stable, polished, deployed, and supported by analytics and usability evidence for Demo Day presentation.
 
-### Stories Allocated to Sprint 4
+## Demo Day
+
+June 11 2026
+
+---
+
+## Capacity
+
+**Sprint 4 commitment:** 8 story points
+
+---
+
+## Stories Allocated to Sprint 4
 
 | Story ID | Story (summary) | Points | Assignee | AI Tool |
 |----------|----------------|--------|----------|---------|
 | S4-01 | As a first-time demo user, I want polished empty/loading/error states so that the product feels reliable. | 3 | Archil Margvelashvili | Cursor |
 | S4-02 | As a team, we want a clean analytics summary so that Demo Day claims are backed by evidence. | 2 | Giorgi Papidze | Cursor |
 | S4-03 | As a target student, I want the critical update flow to be clear without explanation so that I can trust it quickly. | 3 | Nikoloz Jvebenava | Stitch + Cursor |
-| **Sprint 4 Total** | | **8** | | |
+
+| **Sprint 4 Total** |  | **8** |  |  |
 
 ---
 
-## Full Backlog (All Stories)
+# Full Backlog (All Stories)
 
 | Story ID | Story (summary) | Sprint | Points | Interview Evidence |
 |----------|----------------|--------|--------|--------------------|
@@ -206,15 +345,20 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 | S4-02 | Analytics summary for Demo Day | 4 | 2 | Checkpoint 3 and Demo Day require evidence-backed claims. |
 | S4-03 | Activation clarity polish | 4 | 3 | Lab 5 rubric emphasizes visible activation moment. |
 
-**Total story points across all sprints:** 43  
+---
+
+## Total Story Points
+
+**Total story points across all sprints:** 43
+
 **Unallocated backlog points:** 0
 
 ---
 
-## Milestone Alignment
+# Milestone Alignment
 
-| Milestone | Date | What Your Product Must Be Able to Do |
-|-----------|------|--------------------------------------|
+| Milestone | Date | Expected Capability |
+|-----------|------|---------------------|
 | Checkpoint 2 | Wed 22 Apr | Prototype testable, Lab 5 analytics docs committed, roadmap submitted |
 | Sprint 1 Review | Week 10 (May 7) | Core activation flow working end to end, deployed URL available |
 | Checkpoint 3 | Thu 21 May | MVP functional, analytics live, usability evidence gathered |
@@ -223,12 +367,16 @@ KIU Nexus is a Unified Academic Command Center designed for university students 
 
 ---
 
-## Change Log
+# Change Log
 
 | Date | Version | Changes | Author |
 |------|---------|---------|--------|
+<<<<<<< HEAD
 | 2026-05-04 | 1.0 | Initial roadmap and MVP scope | Giorgi Papidze |
 | 2026-05-08 | 1.0 | Initial roadmap | Nikoloz Jvebenava |
+=======
+| 2026-05-04 | 1.1 | Updated roadmap with INVEST validation and sprint capability statements | Giorgi Papidze |
+>>>>>>> 63155d00958b78cb0e9a130a74fc95a6be9eac93
 
 ---
 
