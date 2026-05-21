@@ -1,13 +1,17 @@
 "use client"
 
 import { useActionState, useEffect, useRef } from "react"
-import { Check, MoreVertical } from "lucide-react"
+import { Check, MoreVertical, X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { track } from "@/lib/mixpanel"
 import type { AcademicUpdate } from "@/lib/types"
 
-import { acknowledgeUpdateAction, type AckState } from "./actions"
+import {
+  acknowledgeUpdateAction,
+  removeAcknowledgmentAction,
+  type AckState,
+} from "./actions"
 
 type UpdateCardProps = {
   update: AcademicUpdate
@@ -106,8 +110,13 @@ export function UpdateCard({
     acknowledgeUpdateAction,
     initialState
   )
+  const [removeState, removeFormAction, removePending] = useActionState(
+    removeAcknowledgmentAction,
+    initialState
+  )
 
   const trackedRef = useRef<string | null>(null)
+  const unacknowledgedRef = useRef<string | null>(null)
 
   useEffect(() => {
     if (
@@ -126,6 +135,24 @@ export function UpdateCard({
       })
     }
   }, [state, update.id, update.courses, update.type, update.source])
+
+  useEffect(() => {
+    if (
+      removeState &&
+      "success" in removeState &&
+      removeState.success &&
+      removeState.success.update_id === update.id &&
+      unacknowledgedRef.current !== update.id
+    ) {
+      unacknowledgedRef.current = update.id
+      track("remove_acknowledgment", {
+        update_id: update.id,
+        course_code: update.courses?.code ?? null,
+        type: update.type,
+        source: update.source,
+      })
+    }
+  }, [removeState, update.id, update.courses, update.type, update.source])
 
   const courseCode = update.courses?.code ?? null
   const badgeLabel = courseCode
@@ -199,10 +226,19 @@ export function UpdateCard({
           {timestampLabel}
         </span>
         {acknowledged ? (
-          <span className="inline-flex items-center gap-1 text-emerald-400 font-mono-label text-[10px]">
-            <Check className="size-3" />
-            ADDED TO PLAN
-          </span>
+          <form action={removeFormAction} className="inline-flex">
+            <input type="hidden" name="update_id" value={update.id} />
+            <button
+              type="submit"
+              disabled={removePending}
+              title="Remove from plan"
+              className="group bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 px-2 py-0.5 font-mono-label flex items-center gap-1 text-[10px] disabled:opacity-60 transition-colors"
+            >
+              <Check className="size-3" />
+              {removePending ? "REMOVING..." : "ADDED TO PLAN"}
+              <X className="size-3 ml-1 opacity-50 group-hover:opacity-100 transition-opacity" />
+            </button>
+          </form>
         ) : (
           <form action={formAction} className="flex items-center gap-2">
             <input type="hidden" name="update_id" value={update.id} />

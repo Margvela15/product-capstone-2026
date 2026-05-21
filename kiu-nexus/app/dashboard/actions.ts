@@ -37,3 +37,32 @@ export async function acknowledgeUpdateAction(
   revalidatePath("/dashboard")
   return { success: { update_id: updateId } }
 }
+
+export async function removeAcknowledgmentAction(
+  _prev: AckState,
+  formData: FormData
+): Promise<AckState> {
+  const updateId = formData.get("update_id")
+  if (typeof updateId !== "string" || !updateId) {
+    return { error: "Missing update id." }
+  }
+
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return { error: "Not signed in." }
+
+  const { error } = await supabase
+    .from("acknowledgments")
+    .delete()
+    .eq("user_id", user.id)
+    .eq("update_id", updateId)
+
+  if (error) {
+    return { error: error.message }
+  }
+
+  revalidatePath("/dashboard")
+  return { success: { update_id: updateId } }
+}

@@ -1,3 +1,4 @@
+import Link from "next/link"
 import {
   FileText,
   GraduationCap,
@@ -7,9 +8,29 @@ import {
   Settings,
   Terminal,
   Users,
+  type LucideIcon,
 } from "lucide-react"
 
-export function AppSidebar() {
+import { cn } from "@/lib/utils"
+
+type AppSidebarProps = {
+  activePath: "/dashboard" | "/inbox" | (string & {})
+}
+
+type NavItem = {
+  href: string
+  label: string
+  icon: LucideIcon
+}
+
+const NAV_ITEMS: NavItem[] = [
+  { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/courses", label: "Course Nerve Centers", icon: GraduationCap },
+  { href: "/inbox", label: "Automated Inbox", icon: Inbox },
+  { href: "/projects", label: "Project Group Sync", icon: Users },
+]
+
+export function AppSidebar({ activePath }: AppSidebarProps) {
   return (
     <aside className="hidden md:flex flex-col h-screen py-6 px-3 fixed left-0 top-0 z-50 bg-[#161618] w-64 border-r border-[#2D2D30]">
       <div className="font-black text-[#F98012] mb-6 text-lg tracking-tighter px-3">
@@ -20,34 +41,30 @@ export function AppSidebar() {
         <span className="font-mono-label text-zinc-600 text-[10px] mb-2 px-3">
           MAIN TERMINAL
         </span>
-        <a
-          href="/dashboard"
-          className="flex items-center gap-3 px-3 py-2 text-[#F98012] bg-[#F98012]/10 border-l-2 border-[#F98012] transition-all duration-200 font-mono-label text-[12px]"
-        >
-          <LayoutDashboard className="size-[18px]" />
-          <span>Dashboard</span>
-        </a>
-        <a
-          href="#"
-          className="flex items-center gap-3 px-3 py-2 text-zinc-500 hover:text-zinc-200 hover:bg-[#2D2D30] transition-all duration-200 group font-mono-label text-[12px]"
-        >
-          <GraduationCap className="size-[18px] group-hover:translate-x-1 duration-200" />
-          <span>Course Nerve Centers</span>
-        </a>
-        <a
-          href="#"
-          className="flex items-center gap-3 px-3 py-2 text-zinc-500 hover:text-zinc-200 hover:bg-[#2D2D30] transition-all duration-200 group font-mono-label text-[12px]"
-        >
-          <Inbox className="size-[18px] group-hover:translate-x-1 duration-200" />
-          <span>Automated Inbox</span>
-        </a>
-        <a
-          href="#"
-          className="flex items-center gap-3 px-3 py-2 text-zinc-500 hover:text-zinc-200 hover:bg-[#2D2D30] transition-all duration-200 group font-mono-label text-[12px]"
-        >
-          <Users className="size-[18px] group-hover:translate-x-1 duration-200" />
-          <span>Project Group Sync</span>
-        </a>
+        {NAV_ITEMS.map((item) => {
+          const isActive = activePath === item.href
+          const Icon = item.icon
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "flex items-center gap-3 px-3 py-2 transition-all duration-200 font-mono-label text-[12px]",
+                isActive
+                  ? "text-[#F98012] bg-[#F98012]/10 border-l-2 border-[#F98012]"
+                  : "text-zinc-500 hover:text-zinc-200 hover:bg-[#2D2D30] group"
+              )}
+            >
+              <Icon
+                className={cn(
+                  "size-[18px]",
+                  !isActive && "group-hover:translate-x-1 duration-200"
+                )}
+              />
+              <span>{item.label}</span>
+            </Link>
+          )
+        })}
       </div>
 
       <button

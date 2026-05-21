@@ -151,7 +151,7 @@ export default async function DashboardPage() {
 
   return (
     <div className="flex min-h-screen">
-      <AppSidebar />
+      <AppSidebar activePath="/dashboard" />
       <div className="flex-1 md:ml-64 min-h-screen bg-[#0D0D0E] flex flex-col">
         <AppTopbar displayName={displayName} />
 
