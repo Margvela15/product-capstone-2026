@@ -5,6 +5,7 @@ let initialized = false
 export function initMixpanel() {
   if (initialized || typeof window === "undefined") return
   mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_TOKEN!, {
+    api_host: "https://api-eu.mixpanel.com",
     track_pageview: true,
     persistence: "localStorage",
   })
