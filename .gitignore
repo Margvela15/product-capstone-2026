@@ -20,3 +20,6 @@ Thumbs.db
 *.log
 *.bak
 *.swp
+
+# Stitch design reference (downloaded HTML + screenshots)
+_stitch/

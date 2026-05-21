@@ -1,0 +1,159 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: #0D0D0E;
+  --foreground: #e4e2e4;
+  --card: #161618;
+  --card-foreground: #e4e2e4;
+  --popover: #1f1f21;
+  --popover-foreground: #e4e2e4;
+  --primary: #F98012;
+  --primary-foreground: #1a0900;
+  --secondary: #1f1f21;
+  --secondary-foreground: #e4e2e4;
+  --muted: #1b1b1d;
+  --muted-foreground: #a1a1aa;
+  --accent: #2a2a2c;
+  --accent-foreground: #e4e2e4;
+  --destructive: #ffb4ab;
+  --border: #2D2D30;
+  --input: #161618;
+  --ring: #F98012;
+  --chart-1: #F98012;
+  --chart-2: #404283;
+  --chart-3: #bec2ff;
+  --chart-4: #10B981;
+  --chart-5: #a68c7c;
+  --radius: 0.25rem;
+  --sidebar: #161618;
+  --sidebar-foreground: #e4e2e4;
+  --sidebar-primary: #F98012;
+  --sidebar-primary-foreground: #1a0900;
+  --sidebar-accent: #2a2a2c;
+  --sidebar-accent-foreground: #e4e2e4;
+  --sidebar-border: #2D2D30;
+  --sidebar-ring: #F98012;
+}
+
+.dark {
+  --background: #0D0D0E;
+  --foreground: #e4e2e4;
+  --card: #161618;
+  --card-foreground: #e4e2e4;
+  --popover: #1f1f21;
+  --popover-foreground: #e4e2e4;
+  --primary: #F98012;
+  --primary-foreground: #1a0900;
+  --secondary: #1f1f21;
+  --secondary-foreground: #e4e2e4;
+  --muted: #1b1b1d;
+  --muted-foreground: #a1a1aa;
+  --accent: #2a2a2c;
+  --accent-foreground: #e4e2e4;
+  --destructive: #ffb4ab;
+  --border: #2D2D30;
+  --input: #161618;
+  --ring: #F98012;
+  --chart-1: #F98012;
+  --chart-2: #404283;
+  --chart-3: #bec2ff;
+  --chart-4: #10B981;
+  --chart-5: #a68c7c;
+  --sidebar: #161618;
+  --sidebar-foreground: #e4e2e4;
+  --sidebar-primary: #F98012;
+  --sidebar-primary-foreground: #1a0900;
+  --sidebar-accent: #2a2a2c;
+  --sidebar-accent-foreground: #e4e2e4;
+  --sidebar-border: #2D2D30;
+  --sidebar-ring: #F98012;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .font-mono-label {
+    font-family: var(--font-mono), monospace;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .font-mono-data {
+    font-family: var(--font-mono), monospace;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .platform-moodle {
+    border-left: 3px solid #F98012;
+  }
+  .platform-teams {
+    border-left: 3px solid #404283;
+  }
+  .platform-whatsapp {
+    border-left: 3px solid #10B981;
+  }
+  .platform-email {
+    border-left: 3px solid #a68c7c;
+  }
+}
