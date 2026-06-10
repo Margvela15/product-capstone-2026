@@ -1,5 +1,5 @@
 import { cache } from "react"
-import { redirect } from "next/navigation"
+import Link from "next/link"
 import { Activity, Sparkles } from "lucide-react"
 
 import { AppSidebar } from "@/components/app-sidebar"
@@ -66,8 +66,127 @@ export default async function DashboardPage() {
   const {
     data: { user },
   } = await supabase.auth.getUser()
+
   if (!user) {
-    redirect("/login")
+    const demoUpdates = [
+      {
+        id: "1",
+        title: "Assignment: Data Structures Problem Set",
+        description: "Submit solutions for linked lists and hash tables",
+        due_at: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(),
+        source: "MOODLE",
+        courses: { code: "CS3102", title: "Data Structures" },
+      },
+      {
+        id: "2",
+        title: "Project milestone review",
+        description: "Present progress on capstone project to supervisors",
+        due_at: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toISOString(),
+        source: "TEAMS",
+        courses: { code: "CS4061", title: "Capstone Project" },
+      },
+      {
+        id: "3",
+        title: "Quiz: Software Engineering principles",
+        description: "40-minute multiple choice quiz on SDLC methodologies",
+        due_at: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000).toISOString(),
+        source: "MOODLE",
+        courses: { code: "CS3101", title: "Software Engineering" },
+      },
+    ]
+
+    return (
+      <div className="flex min-h-screen">
+        <AppSidebar activePath="/dashboard" />
+        <div className="flex-1 md:ml-64 min-h-screen bg-[#0D0D0E] flex flex-col">
+          <AppTopbar displayName="Guest" showSignOut={false} />
+          <main className="p-6 max-w-[1400px] mx-auto w-full flex flex-col gap-6 grow">
+            <div className="flex items-end justify-between gap-4 flex-wrap">
+              <div>
+                <h1 className="text-2xl font-semibold tracking-tight text-zinc-100">
+                  Dashboard (Demo)
+                </h1>
+                <p className="font-mono-label text-zinc-500 mt-1">
+                  SAMPLE ACADEMIC UPDATES - SIGN IN TO SEE YOUR PERSONAL ITEMS
+                </p>
+              </div>
+              <div className="flex gap-2">
+                <Link
+                  href="/login"
+                  className="font-mono-label text-[12px] bg-zinc-800 border border-zinc-700 text-zinc-400 hover:text-zinc-200 px-3 py-1.5"
+                >
+                  Sign in
+                </Link>
+                <Link
+                  href="/signup"
+                  className="font-mono-label text-[12px] bg-[#F98012] text-[#1a0900] hover:bg-[#ffb787] px-3 py-1.5 font-bold"
+                >
+                  Create access
+                </Link>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              {demoUpdates.map((update) => {
+                const due = new Date(update.due_at).getTime()
+                const now = Date.now()
+                const diff = due - now
+                const hours = Math.floor(diff / (1000 * 60 * 60))
+                const days = Math.floor(hours / 24)
+                const hoursInDay = hours % 24
+                
+                let dueSoon = ""
+                if (days > 0) {
+                  dueSoon = `${days}D ${hoursInDay}H REMAINING`
+                } else {
+                  dueSoon = `${hours}H REMAINING`
+                }
+
+                return (
+                  <div
+                    key={update.id}
+                    className="bg-[#161618] border border-[#2D2D30] p-4 hover:border-[#F98012]/30 transition-colors"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="font-mono-label text-[10px] text-zinc-500">
+                            {update.courses?.code} • {update.source}
+                          </span>
+                        </div>
+                        <h3 className="text-lg font-semibold text-zinc-100 mb-1">
+                          {update.title}
+                        </h3>
+                        <p className="text-sm text-zinc-400">
+                          {update.description}
+                        </p>
+                      </div>
+                      <div className="text-right">
+                        <p className="font-mono-label text-[10px] text-zinc-600 mb-1">
+                          DUE IN
+                        </p>
+                        <p className="font-mono-data font-bold text-[#F98012]">
+                          {dueSoon}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+
+            <div className="mt-auto rounded-lg border border-[#2D2D30] bg-[#0D0D0E] p-6">
+              <p className="font-mono-label text-xs uppercase text-zinc-600 mb-2">
+                Demo mode
+              </p>
+              <p className="text-sm text-zinc-400">
+                This is a preview of the dashboard with sample updates. Sign in to see your personalized academic feed.
+              </p>
+            </div>
+          </main>
+        </div>
+      </div>
+    )
   }
 
   const { data: profile } = await supabase

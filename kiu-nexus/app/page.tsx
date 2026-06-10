@@ -64,6 +64,32 @@ export default function Home() {
             >
               Sign in
             </Link>
+            <Link
+              href="/dashboard"
+              className="font-mono-label bg-zinc-800 text-zinc-200 hover:bg-zinc-700 border border-zinc-700 px-6 py-3 font-bold transition-colors active:scale-95 duration-150"
+            >
+              Continue as guest
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            <Link
+              href="/courses"
+              className="rounded-sm border border-[#2D2D30] bg-[#0D0D0E] px-5 py-4 text-left text-sm text-zinc-200 hover:border-[#F98012] hover:bg-[#161618] transition-colors"
+            >
+              <span className="font-semibold text-zinc-100">Course Nerve Centers</span>
+              <p className="mt-2 text-zinc-500">
+                Explore course dashboards and priority feeds without signing in.
+              </p>
+            </Link>
+            <Link
+              href="/projects"
+              className="rounded-sm border border-[#2D2D30] bg-[#0D0D0E] px-5 py-4 text-left text-sm text-zinc-200 hover:border-[#F98012] hover:bg-[#161618] transition-colors"
+            >
+              <span className="font-semibold text-zinc-100">Project Group Sync</span>
+              <p className="mt-2 text-zinc-500">
+                View project sync workflows and team coordination tools as a guest.
+              </p>
+            </Link>
           </div>
         </div>
       </section>

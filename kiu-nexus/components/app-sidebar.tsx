@@ -67,12 +67,12 @@ export function AppSidebar({ activePath }: AppSidebarProps) {
         })}
       </div>
 
-      <button
-        type="button"
-        className="mx-3 py-2 px-4 bg-[#F98012] text-[#1a0900] font-bold border border-[#F98012]/20 active:scale-95 duration-150 mb-auto text-[13px]"
+      <Link
+        href="/projects/new"
+        className="mx-3 py-2 px-4 bg-[#F98012] text-[#1a0900] font-bold border border-[#F98012]/20 active:scale-95 duration-150 mb-auto text-[13px] inline-block text-center"
       >
         + New Project
-      </button>
+      </Link>
 
       <div className="flex flex-col gap-1 mt-auto">
         <a

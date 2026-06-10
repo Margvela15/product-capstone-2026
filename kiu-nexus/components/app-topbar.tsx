@@ -4,9 +4,10 @@ import { SignOutButton } from "@/app/auth/sign-out-button"
 
 type AppTopbarProps = {
   displayName: string
+  showSignOut?: boolean
 }
 
-export function AppTopbar({ displayName }: AppTopbarProps) {
+export function AppTopbar({ displayName, showSignOut = true }: AppTopbarProps) {
   return (
     <header className="flex justify-between items-center h-14 px-4 w-full z-40 sticky top-0 bg-[#0D0D0E] border-b border-[#2D2D30] tracking-tight">
       <div className="flex items-center gap-4">
@@ -44,7 +45,7 @@ export function AppTopbar({ displayName }: AppTopbarProps) {
         <span className="font-mono-label text-zinc-400 ml-2 hidden sm:inline">
           {displayName}
         </span>
-        <SignOutButton />
+        {showSignOut ? <SignOutButton /> : null}
       </div>
     </header>
   )

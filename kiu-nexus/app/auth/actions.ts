@@ -15,12 +15,19 @@ function humanizeAuthError(message: string): string {
     return "Please confirm your email before signing in."
   }
   if (normalized.includes("user already registered")) {
-    return "An account with that email already exists."
+    return "An account with that email already exists. Please sign in instead."
+  }
+  if (normalized.includes("email rate limit")) {
+    return "Signup is temporarily blocked because too many verification emails were sent. Wait a few minutes and try again."
   }
   if (normalized.includes("rate limit")) {
     return "Too many attempts — please wait a moment and try again."
   }
   return message
+}
+
+function isValidEmail(email: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
 
 export async function signInAction(
@@ -32,6 +39,9 @@ export async function signInAction(
 
   if (!email) {
     return { error: "Please enter your email." }
+  }
+  if (!isValidEmail(email)) {
+    return { error: "Please enter a valid email address." }
   }
   if (!password) {
     return { error: "Please enter your password." }
@@ -61,6 +71,9 @@ export async function signUpAction(
   }
   if (!email) {
     return { error: "Please enter your email." }
+  }
+  if (!isValidEmail(email)) {
+    return { error: "Please enter a valid email address." }
   }
   if (!password || password.length < 8) {
     return { error: "Password must be at least 8 characters long." }

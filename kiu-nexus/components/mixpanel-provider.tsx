@@ -7,7 +7,7 @@ import { createClient } from "@/lib/supabase/client"
 
 export function MixpanelProvider() {
   useEffect(() => {
-    if (!process.env.NEXT_PUBLIC_MIXPANEL_TOKEN) return
+    if (!(process as any).env.NEXT_PUBLIC_MIXPANEL_TOKEN) return
 
     initMixpanel()
 
@@ -26,6 +26,6 @@ export function MixpanelProvider() {
     }
   }, [])
 
-  if (!process.env.NEXT_PUBLIC_MIXPANEL_TOKEN) return null
+  if (!(process as any).env.NEXT_PUBLIC_MIXPANEL_TOKEN) return null
   return null
 }

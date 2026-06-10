@@ -78,15 +78,23 @@ export function LoginForm() {
         >
           {pending ? "Authenticating..." : "Sign in"}
         </Button>
-        <p className="text-center text-sm text-zinc-500 mt-2">
-          Don&apos;t have an account?{" "}
+        <div className="flex flex-col gap-3 mt-3">
           <Link
-            href="/signup"
-            className="font-medium text-[#F98012] hover:text-[#ffb787]"
+            href="/dashboard"
+            className="inline-flex items-center justify-center w-full rounded-sm border border-zinc-700 bg-zinc-900 px-4 py-3 text-sm font-semibold text-zinc-100 hover:bg-zinc-800 transition-colors"
           >
-            Provision one
+            Continue as guest
           </Link>
-        </p>
+          <p className="text-center text-sm text-zinc-500">
+            Don&apos;t have an account?{" "}
+            <Link
+              href="/signup"
+              className="font-medium text-[#F98012] hover:text-[#ffb787]"
+            >
+              Create an account
+            </Link>
+          </p>
+        </div>
       </form>
     </div>
   )
