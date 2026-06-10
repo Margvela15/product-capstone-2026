@@ -67,6 +67,7 @@ Yes. If triage quality improves and critical items are surfaced clearly, acknowl
 
 **What the user does on that screen:** Taps "Acknowledge and Add to Plan"
 
+
 **Event that fires:** `critical_update_acknowledged`
 
 **How that event feeds the NSM:** Each `critical_update_acknowledged` event increments the weekly count for the related `user_id`; dashboard aggregation computes acknowledged updates per active user.
