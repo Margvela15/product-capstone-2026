@@ -1,22 +1,12 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-declare global {
-  namespace NodeJS {
-    interface ProcessEnv {
-      NEXT_PUBLIC_SUPABASE_URL: string;
-      NEXT_PUBLIC_SUPABASE_ANON_KEY: string;
-    }
-  }
-}
-
-export async function middleware(request: NextRequest) {
-  const SUPABASE_URL = (process.env.NEXT_PUBLIC_SUPABASE_URL as string) ?? "";
-  const SUPABASE_KEY = (process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string) ?? "";
+export async function proxy(request: NextRequest) {
+  const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+  const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
 
   const response = NextResponse.next();
 
-  // Check if environment variables are set
   if (!SUPABASE_URL || !SUPABASE_KEY) {
     console.error("Supabase environment variables are not set.");
     return response;
@@ -52,8 +42,14 @@ export async function middleware(request: NextRequest) {
       return NextResponse.redirect(new URL("/", request.url));
     }
   } catch (error) {
-    console.error("Error in middleware:", error);
+    console.error("Error in proxy:", error);
   }
 
   return response;
 }
+
+export const config = {
+  matcher: [
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
+  ],
+};
